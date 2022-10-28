@@ -1,33 +1,33 @@
 ﻿Imports SGN.Entity
 Imports System.Data.SqlClient
 
-Public Class CargoDAL
+Public Class MarcaDAL
     Inherits BaseDAL
 
-    Public Shared Sub Create(cargo As CargoEntity)
+    Public Shared Sub Create(marca As MarcaEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("AddCargo", conex)
+            Using cmd As New SqlCommand("AddMarca", conex)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("@name", cargo.Nombre)
-                cargo.Id = Convert.ToInt32(cmd.ExecuteScalar())
+                cmd.Parameters.AddWithValue("@name", marca.Nombre)
+                marca.Id = Convert.ToInt32(cmd.ExecuteScalar())
             End Using
 
         End Using
 
     End Sub
 
-    Public Shared Sub Update(cargo As CargoEntity)
+    Public Shared Sub Update(marca As MarcaEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("UpdateCargo", conex)
+            Using cmd As New SqlCommand("UpdateMarca", conex)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("@name", cargo.Nombre)
-                cmd.Parameters.AddWithValue("@id", cargo.Id)
+                cmd.Parameters.AddWithValue("@name", marca.Nombre)
+                cmd.Parameters.AddWithValue("@id", marca.Id)
                 cmd.ExecuteNonQuery()
             End Using
 
@@ -41,7 +41,7 @@ Public Class CargoDAL
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("DeleteCargo", conex)
+            Using cmd As New SqlCommand("DeleteMarca", conex)
                 cmd.CommandType = CommandType.StoredProcedure
                 cmd.Parameters.AddWithValue("@id", id)
                 isdeleted = cmd.ExecuteNonQuery() > 0
@@ -53,14 +53,14 @@ Public Class CargoDAL
 
     End Function
 
-    Public Shared Function GetAll() As List(Of CargoEntity)
+    Public Shared Function GetAll() As List(Of MarcaEntity)
 
-        Dim list As New List(Of CargoEntity)
+        Dim list As New List(Of MarcaEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("GetAllCargos", conex)
+            Using cmd As New SqlCommand("GetAllMarcas", conex)
                 cmd.CommandType = CommandType.StoredProcedure
 
                 Dim reader As SqlDataReader = cmd.ExecuteReader()
@@ -77,14 +77,14 @@ Public Class CargoDAL
 
     End Function
 
-    Private Shared Function ConvertToObject(reader As IDataReader) As CargoEntity
+    Private Shared Function ConvertToObject(reader As IDataReader) As MarcaEntity
 
-        Dim tipodoc As New CargoEntity With {
+        Dim marca As New MarcaEntity With {
             .Id = reader(0),
             .Nombre = reader(1)
         }
 
-        Return tipodoc
+        Return marca
 
     End Function
 

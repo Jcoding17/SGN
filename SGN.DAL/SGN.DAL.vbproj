@@ -46,6 +46,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,9 +65,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticuloDAL.vb" />
     <Compile Include="BaseDAL.vb" />
     <Compile Include="CargoDAL.vb" />
+    <Compile Include="CategoriaDAL.vb" />
     <Compile Include="ClienteDAL.vb" />
+    <Compile Include="CompraDAL.vb" />
+    <Compile Include="CotizacionDAL.vb" />
+    <Compile Include="EmpleadoDAL.vb" />
+    <Compile Include="FacturaReparacionDAL.vb" />
+    <Compile Include="MarcaDAL.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -82,7 +90,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ProveedorDAL.vb" />
+    <Compile Include="ReparacionDAL.vb" />
     <Compile Include="TipoDocDAL.vb" />
+    <Compile Include="UsuarioDAL.vb" />
+    <Compile Include="VentaDAL.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

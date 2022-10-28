@@ -1,33 +1,33 @@
 ﻿Imports SGN.Entity
 Imports System.Data.SqlClient
 
-Public Class CargoDAL
+Public Class CategoriaDAL
     Inherits BaseDAL
 
-    Public Shared Sub Create(cargo As CargoEntity)
+    Public Shared Sub Create(categoria As CategoriaEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("AddCargo", conex)
+            Using cmd As New SqlCommand("Addcategoria", conex)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("@name", cargo.Nombre)
-                cargo.Id = Convert.ToInt32(cmd.ExecuteScalar())
+                cmd.Parameters.AddWithValue("@name", categoria.Nombre)
+                categoria.Id = Convert.ToInt32(cmd.ExecuteScalar())
             End Using
 
         End Using
 
     End Sub
 
-    Public Shared Sub Update(cargo As CargoEntity)
+    Public Shared Sub Update(categoria As CategoriaEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("UpdateCargo", conex)
+            Using cmd As New SqlCommand("Updatecategoria", conex)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("@name", cargo.Nombre)
-                cmd.Parameters.AddWithValue("@id", cargo.Id)
+                cmd.Parameters.AddWithValue("@name", categoria.Nombre)
+                cmd.Parameters.AddWithValue("@id", categoria.Id)
                 cmd.ExecuteNonQuery()
             End Using
 
@@ -41,7 +41,7 @@ Public Class CargoDAL
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("DeleteCargo", conex)
+            Using cmd As New SqlCommand("Deletecategoria", conex)
                 cmd.CommandType = CommandType.StoredProcedure
                 cmd.Parameters.AddWithValue("@id", id)
                 isdeleted = cmd.ExecuteNonQuery() > 0
@@ -53,14 +53,14 @@ Public Class CargoDAL
 
     End Function
 
-    Public Shared Function GetAll() As List(Of CargoEntity)
+    Public Shared Function GetAll() As List(Of CategoriaEntity)
 
-        Dim list As New List(Of CargoEntity)
+        Dim list As New List(Of CategoriaEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
             conex.Open()
 
-            Using cmd As New SqlCommand("GetAllCargos", conex)
+            Using cmd As New SqlCommand("GetAllcategorias", conex)
                 cmd.CommandType = CommandType.StoredProcedure
 
                 Dim reader As SqlDataReader = cmd.ExecuteReader()
@@ -77,14 +77,14 @@ Public Class CargoDAL
 
     End Function
 
-    Private Shared Function ConvertToObject(reader As IDataReader) As CargoEntity
+    Private Shared Function ConvertToObject(reader As IDataReader) As CategoriaEntity
 
-        Dim tipodoc As New CargoEntity With {
+        Dim cargo As New CategoriaEntity With {
             .Id = reader(0),
             .Nombre = reader(1)
         }
 
-        Return tipodoc
+        Return cargo
 
     End Function
 
