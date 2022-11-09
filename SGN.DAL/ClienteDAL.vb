@@ -4,6 +4,7 @@ Imports SGN.Entity
 Public Class ClienteDAL
     Inherits BaseDAL
 
+    'Metodos CRUD'
     Public Shared Sub Create(cliente As ClienteEntity)
 
         Using conex As New SqlConnection(SqlStringConnection)
@@ -146,16 +147,16 @@ Public Class ClienteDAL
 
     Private Shared Function ConvertToObject(reader As IDataReader) As ClienteEntity
 
-        Dim cliente As New ClienteEntity With {
-            .Id = Convert.ToInt32(reader(0)),
-            .Nombre = Convert.ToString(reader(1)),
-            .Apellido = Convert.ToString(reader(2)),
-            .IdDoc = Convert.ToInt32(reader(3)),
-            .NoDoc = Convert.ToString(reader(4)),
-            .Telefono = Convert.ToString(reader(5)),
-            .Email = Convert.ToString(reader(6)),
-            .Direccion = Convert.ToString(reader(7))
-        }
+        Dim cliente As New ClienteEntity
+        cliente.Id = Convert.ToInt32(reader(0))
+        cliente.Nombre = Convert.ToString(reader(1))
+        cliente.Apellido = Convert.ToString(reader(2))
+        cliente.IdDoc = Convert.ToInt32(reader(3))
+        cliente.NoDoc = Convert.ToString(reader(4))
+        cliente.Telefono = Convert.ToString(reader(5))
+        cliente.Email = Convert.ToString(reader(6))
+        cliente.Direccion = Convert.ToString(reader(7))
+
 
         Return cliente
 

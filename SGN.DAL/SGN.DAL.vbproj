@@ -72,6 +72,7 @@
     <Compile Include="ClienteDAL.vb" />
     <Compile Include="CompraDAL.vb" />
     <Compile Include="CotizacionDAL.vb" />
+    <Compile Include="DashBoardDAL.vb" />
     <Compile Include="EmpleadoDAL.vb" />
     <Compile Include="FacturaReparacionDAL.vb" />
     <Compile Include="MarcaDAL.vb" />

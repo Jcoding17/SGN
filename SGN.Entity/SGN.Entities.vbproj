@@ -70,6 +70,7 @@
     <Compile Include="CategoriaEntity.vb" />
     <Compile Include="ClienteEntity.vb" />
     <Compile Include="CotizacionEntity.vb" />
+    <Compile Include="DashboardEntity.vb" />
     <Compile Include="DetalleCompraEntity.vb" />
     <Compile Include="DetalleCotizacionEntity.vb" />
     <Compile Include="DetalleReparacionEntity.vb" />

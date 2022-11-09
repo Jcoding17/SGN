@@ -73,17 +73,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="FrmBuscarClientes.Designer.vb">
+      <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FrmDashBoard.Designer.vb">
+      <DependentUpon>FrmDashBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogIn.Designer.vb">
+      <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoCliente.Designer.vb">
+      <DependentUpon>FrmMantenimientoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoCliente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,6 +115,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmBuscarClientes.resx">
+      <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashBoard.resx">
+      <DependentUpon>FrmDashBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoCliente.resx">
+      <DependentUpon>FrmMantenimientoCliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -125,6 +155,105 @@
       <Project>{f4a65d25-fe73-43ea-9377-c23a7c23e49f}</Project>
       <Name>SGN.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compra32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cotizacion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reparacion32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximaze32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximaze321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximaze322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
