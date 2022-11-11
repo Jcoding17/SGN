@@ -64,7 +64,7 @@ Partial Class FrmMantenimientoCliente
         Me.CboxIdDoc.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboxIdDoc.ForeColor = System.Drawing.Color.Black
         Me.CboxIdDoc.FormattingEnabled = True
-        Me.CboxIdDoc.Location = New System.Drawing.Point(12, 223)
+        Me.CboxIdDoc.Location = New System.Drawing.Point(12, 228)
         Me.CboxIdDoc.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CboxIdDoc.Name = "CboxIdDoc"
         Me.CboxIdDoc.Size = New System.Drawing.Size(343, 36)
@@ -76,26 +76,26 @@ Partial Class FrmMantenimientoCliente
         '
         'TxtId
         '
-        Me.TxtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtId.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtId.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtId.Enabled = False
-        Me.TxtId.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtId.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtId.ForeColor = System.Drawing.Color.Black
-        Me.TxtId.Location = New System.Drawing.Point(451, 420)
+        Me.TxtId.Location = New System.Drawing.Point(451, 419)
         Me.TxtId.Name = "TxtId"
         Me.TxtId.ReadOnly = True
-        Me.TxtId.Size = New System.Drawing.Size(343, 38)
+        Me.TxtId.Size = New System.Drawing.Size(343, 32)
         Me.TxtId.TabIndex = 14
         '
         'TxtNombre
         '
-        Me.TxtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtNombre.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtNombre.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNombre.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNombre.ForeColor = System.Drawing.Color.Black
-        Me.TxtNombre.Location = New System.Drawing.Point(12, 128)
+        Me.TxtNombre.Location = New System.Drawing.Point(12, 136)
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(343, 38)
+        Me.TxtNombre.Size = New System.Drawing.Size(343, 32)
         Me.TxtNombre.TabIndex = 15
         '
         'BtnGuardar
@@ -105,7 +105,7 @@ Partial Class FrmMantenimientoCliente
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(544, 520)
+        Me.BtnGuardar.Location = New System.Drawing.Point(544, 493)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(250, 55)
         Me.BtnGuardar.TabIndex = 22
@@ -136,20 +136,20 @@ Partial Class FrmMantenimientoCliente
         '
         'TxtApellido
         '
-        Me.TxtApellido.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtApellido.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtApellido.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtApellido.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtApellido.ForeColor = System.Drawing.Color.Black
-        Me.TxtApellido.Location = New System.Drawing.Point(451, 128)
+        Me.TxtApellido.Location = New System.Drawing.Point(451, 137)
         Me.TxtApellido.Name = "TxtApellido"
-        Me.TxtApellido.Size = New System.Drawing.Size(343, 38)
+        Me.TxtApellido.Size = New System.Drawing.Size(343, 32)
         Me.TxtApellido.TabIndex = 24
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(451, 185)
+        Me.Label3.Location = New System.Drawing.Point(451, 184)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(220, 32)
@@ -158,20 +158,20 @@ Partial Class FrmMantenimientoCliente
         '
         'TxtNoDoc
         '
-        Me.TxtNoDoc.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtNoDoc.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtNoDoc.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtNoDoc.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNoDoc.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtNoDoc.ForeColor = System.Drawing.Color.Black
-        Me.TxtNoDoc.Location = New System.Drawing.Point(451, 223)
+        Me.TxtNoDoc.Location = New System.Drawing.Point(451, 231)
         Me.TxtNoDoc.Name = "TxtNoDoc"
-        Me.TxtNoDoc.Size = New System.Drawing.Size(343, 38)
+        Me.TxtNoDoc.Size = New System.Drawing.Size(343, 32)
         Me.TxtNoDoc.TabIndex = 26
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 185)
+        Me.Label4.Location = New System.Drawing.Point(12, 182)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(229, 32)
@@ -182,7 +182,7 @@ Partial Class FrmMantenimientoCliente
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 279)
+        Me.Label5.Location = New System.Drawing.Point(12, 278)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(107, 32)
@@ -191,20 +191,20 @@ Partial Class FrmMantenimientoCliente
         '
         'TxtTelefono
         '
-        Me.TxtTelefono.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtTelefono.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtTelefono.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTelefono.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtTelefono.ForeColor = System.Drawing.Color.Black
-        Me.TxtTelefono.Location = New System.Drawing.Point(12, 317)
+        Me.TxtTelefono.Location = New System.Drawing.Point(12, 324)
         Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(343, 38)
+        Me.TxtTelefono.Size = New System.Drawing.Size(343, 32)
         Me.TxtTelefono.TabIndex = 29
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(451, 279)
+        Me.Label6.Location = New System.Drawing.Point(451, 278)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 32)
@@ -213,20 +213,20 @@ Partial Class FrmMantenimientoCliente
         '
         'TxtEmail
         '
-        Me.TxtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtEmail.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtEmail.ForeColor = System.Drawing.Color.Black
-        Me.TxtEmail.Location = New System.Drawing.Point(451, 317)
+        Me.TxtEmail.Location = New System.Drawing.Point(451, 325)
         Me.TxtEmail.Name = "TxtEmail"
-        Me.TxtEmail.Size = New System.Drawing.Size(343, 38)
+        Me.TxtEmail.Size = New System.Drawing.Size(343, 32)
         Me.TxtEmail.TabIndex = 31
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 380)
+        Me.Label7.Location = New System.Drawing.Point(12, 370)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(115, 32)
@@ -235,20 +235,20 @@ Partial Class FrmMantenimientoCliente
         '
         'TxtDireccion
         '
-        Me.TxtDireccion.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtDireccion.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtDireccion.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtDireccion.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtDireccion.ForeColor = System.Drawing.Color.Black
-        Me.TxtDireccion.Location = New System.Drawing.Point(12, 418)
+        Me.TxtDireccion.Location = New System.Drawing.Point(12, 416)
         Me.TxtDireccion.Name = "TxtDireccion"
-        Me.TxtDireccion.Size = New System.Drawing.Size(343, 38)
+        Me.TxtDireccion.Size = New System.Drawing.Size(343, 32)
         Me.TxtDireccion.TabIndex = 33
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(451, 380)
+        Me.Label8.Location = New System.Drawing.Point(451, 372)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(91, 32)
@@ -262,7 +262,7 @@ Partial Class FrmMantenimientoCliente
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNuevo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNuevo.ForeColor = System.Drawing.Color.White
-        Me.BtnNuevo.Location = New System.Drawing.Point(278, 520)
+        Me.BtnNuevo.Location = New System.Drawing.Point(278, 493)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(250, 55)
         Me.BtnNuevo.TabIndex = 36
@@ -276,7 +276,7 @@ Partial Class FrmMantenimientoCliente
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(12, 520)
+        Me.BtnCancelar.Location = New System.Drawing.Point(12, 493)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(250, 55)
         Me.BtnCancelar.TabIndex = 37
@@ -288,7 +288,7 @@ Partial Class FrmMantenimientoCliente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(806, 587)
+        Me.ClientSize = New System.Drawing.Size(806, 564)
         Me.Controls.Add(Me.BtnCancelar)
         Me.Controls.Add(Me.BtnNuevo)
         Me.Controls.Add(Me.Label8)

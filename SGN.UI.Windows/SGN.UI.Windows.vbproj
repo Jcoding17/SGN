@@ -73,10 +73,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmBuscarArticulos.Designer.vb">
+      <DependentUpon>FrmBuscarArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarCategoria.Designer.vb">
+      <DependentUpon>FrmBuscarCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmBuscarClientes.Designer.vb">
       <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmBuscarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarEmpleados.Designer.vb">
+      <DependentUpon>FrmBuscarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarMarca.Designer.vb">
+      <DependentUpon>FrmBuscarMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarProveedores.Designer.vb">
+      <DependentUpon>FrmBuscarProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarProveedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDashBoard.Designer.vb">
@@ -91,10 +121,46 @@
     <Compile Include="FrmLogIn.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMantemientoEmpleados.Designer.vb">
+      <DependentUpon>FrmMantemientoEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantemientoEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoArticulo.Designer.vb">
+      <DependentUpon>FrmMantenimientoArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoCategoria.Designer.vb">
+      <DependentUpon>FrmMantenimientoCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMantenimientoCliente.Designer.vb">
       <DependentUpon>FrmMantenimientoCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmMantenimientoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoMarca.Designer.vb">
+      <DependentUpon>FrmMantenimientoMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoProveedor.Designer.vb">
+      <DependentUpon>FrmMantenimientoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVenta.Designer.vb">
+      <DependentUpon>FrmVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVenta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -115,8 +181,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmBuscarArticulos.resx">
+      <DependentUpon>FrmBuscarArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarCategoria.resx">
+      <DependentUpon>FrmBuscarCategoria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscarClientes.resx">
       <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarEmpleados.resx">
+      <DependentUpon>FrmBuscarEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarMarca.resx">
+      <DependentUpon>FrmBuscarMarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarProveedores.resx">
+      <DependentUpon>FrmBuscarProveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDashBoard.resx">
       <DependentUpon>FrmDashBoard.vb</DependentUpon>
@@ -124,8 +205,23 @@
     <EmbeddedResource Include="FrmLogIn.resx">
       <DependentUpon>FrmLogIn.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantemientoEmpleados.resx">
+      <DependentUpon>FrmMantemientoEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoArticulo.resx">
+      <DependentUpon>FrmMantenimientoArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoCategoria.resx">
+      <DependentUpon>FrmMantenimientoCategoria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoCliente.resx">
       <DependentUpon>FrmMantenimientoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoMarca.resx">
+      <DependentUpon>FrmMantenimientoMarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoProveedor.resx">
+      <DependentUpon>FrmMantenimientoProveedor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -254,6 +350,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\buscar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addcircle32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

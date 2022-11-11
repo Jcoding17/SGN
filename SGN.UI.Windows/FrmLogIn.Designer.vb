@@ -113,19 +113,19 @@ Partial Class FrmLogIn
         '
         'TxtUser
         '
-        Me.TxtUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtUser.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtUser.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtUser.Location = New System.Drawing.Point(502, 199)
+        Me.TxtUser.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUser.Location = New System.Drawing.Point(508, 201)
         Me.TxtUser.Name = "TxtUser"
-        Me.TxtUser.Size = New System.Drawing.Size(357, 38)
+        Me.TxtUser.Size = New System.Drawing.Size(357, 32)
         Me.TxtUser.TabIndex = 10
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(502, 161)
+        Me.Label2.Location = New System.Drawing.Point(508, 161)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(97, 32)
@@ -136,7 +136,7 @@ Partial Class FrmLogIn
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(508, 251)
+        Me.Label3.Location = New System.Drawing.Point(508, 247)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(138, 32)
@@ -145,13 +145,13 @@ Partial Class FrmLogIn
         '
         'TxtPass
         '
-        Me.TxtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.TxtPass.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtPass.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPass.Location = New System.Drawing.Point(508, 289)
+        Me.TxtPass.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPass.Location = New System.Drawing.Point(508, 287)
         Me.TxtPass.Name = "TxtPass"
         Me.TxtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtPass.Size = New System.Drawing.Size(357, 38)
+        Me.TxtPass.Size = New System.Drawing.Size(357, 32)
         Me.TxtPass.TabIndex = 12
         '
         'BtnLogIn

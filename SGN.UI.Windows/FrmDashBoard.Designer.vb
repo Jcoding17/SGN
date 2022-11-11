@@ -25,6 +25,7 @@ Partial Class FrmDashBoard
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmDashBoard))
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.BtnLogOut = New System.Windows.Forms.Button()
         Me.BtnReparaciones = New System.Windows.Forms.Button()
         Me.BtnCotizaciones = New System.Windows.Forms.Button()
@@ -54,7 +55,8 @@ Partial Class FrmDashBoard
         '
         'PanelMenu
         '
-        Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.Button1)
         Me.PanelMenu.Controls.Add(Me.BtnLogOut)
         Me.PanelMenu.Controls.Add(Me.BtnReparaciones)
         Me.PanelMenu.Controls.Add(Me.BtnCotizaciones)
@@ -67,8 +69,27 @@ Partial Class FrmDashBoard
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(315, 741)
+        Me.PanelMenu.Size = New System.Drawing.Size(315, 900)
         Me.PanelMenu.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.SGN.UI.Windows.My.Resources.Resources.proveedor32
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(1, 394)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(314, 69)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Tag = "Empleados"
+        Me.Button1.Text = "  Proveedores"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'BtnLogOut
         '
@@ -79,10 +100,10 @@ Partial Class FrmDashBoard
         Me.BtnLogOut.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLogOut.Image = CType(resources.GetObject("BtnLogOut.Image"), System.Drawing.Image)
         Me.BtnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnLogOut.Location = New System.Drawing.Point(0, 671)
+        Me.BtnLogOut.Location = New System.Drawing.Point(1, 829)
         Me.BtnLogOut.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnLogOut.Name = "BtnLogOut"
-        Me.BtnLogOut.Size = New System.Drawing.Size(315, 69)
+        Me.BtnLogOut.Size = New System.Drawing.Size(314, 69)
         Me.BtnLogOut.TabIndex = 6
         Me.BtnLogOut.Tag = "Salir"
         Me.BtnLogOut.Text = "  Salir"
@@ -98,10 +119,10 @@ Partial Class FrmDashBoard
         Me.BtnReparaciones.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnReparaciones.Image = CType(resources.GetObject("BtnReparaciones.Image"), System.Drawing.Image)
         Me.BtnReparaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnReparaciones.Location = New System.Drawing.Point(0, 577)
+        Me.BtnReparaciones.Location = New System.Drawing.Point(1, 742)
         Me.BtnReparaciones.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnReparaciones.Name = "BtnReparaciones"
-        Me.BtnReparaciones.Size = New System.Drawing.Size(315, 69)
+        Me.BtnReparaciones.Size = New System.Drawing.Size(314, 69)
         Me.BtnReparaciones.TabIndex = 2
         Me.BtnReparaciones.Tag = "Reparaciones"
         Me.BtnReparaciones.Text = "  Reparaciones"
@@ -117,10 +138,10 @@ Partial Class FrmDashBoard
         Me.BtnCotizaciones.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCotizaciones.Image = CType(resources.GetObject("BtnCotizaciones.Image"), System.Drawing.Image)
         Me.BtnCotizaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCotizaciones.Location = New System.Drawing.Point(0, 502)
+        Me.BtnCotizaciones.Location = New System.Drawing.Point(1, 655)
         Me.BtnCotizaciones.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnCotizaciones.Name = "BtnCotizaciones"
-        Me.BtnCotizaciones.Size = New System.Drawing.Size(315, 69)
+        Me.BtnCotizaciones.Size = New System.Drawing.Size(314, 69)
         Me.BtnCotizaciones.TabIndex = 5
         Me.BtnCotizaciones.Tag = "Cotizaciones"
         Me.BtnCotizaciones.Text = "  Cotizaciones"
@@ -136,10 +157,10 @@ Partial Class FrmDashBoard
         Me.BtnCompras.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCompras.Image = CType(resources.GetObject("BtnCompras.Image"), System.Drawing.Image)
         Me.BtnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCompras.Location = New System.Drawing.Point(0, 426)
+        Me.BtnCompras.Location = New System.Drawing.Point(1, 568)
         Me.BtnCompras.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnCompras.Name = "BtnCompras"
-        Me.BtnCompras.Size = New System.Drawing.Size(315, 69)
+        Me.BtnCompras.Size = New System.Drawing.Size(314, 69)
         Me.BtnCompras.TabIndex = 4
         Me.BtnCompras.Tag = "Compras"
         Me.BtnCompras.Text = "  Compras"
@@ -155,10 +176,10 @@ Partial Class FrmDashBoard
         Me.BtnVentas.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnVentas.Image = CType(resources.GetObject("BtnVentas.Image"), System.Drawing.Image)
         Me.BtnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnVentas.Location = New System.Drawing.Point(0, 351)
+        Me.BtnVentas.Location = New System.Drawing.Point(1, 481)
         Me.BtnVentas.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnVentas.Name = "BtnVentas"
-        Me.BtnVentas.Size = New System.Drawing.Size(315, 69)
+        Me.BtnVentas.Size = New System.Drawing.Size(314, 69)
         Me.BtnVentas.TabIndex = 3
         Me.BtnVentas.Tag = "Ventas"
         Me.BtnVentas.Text = "  Ventas"
@@ -174,10 +195,10 @@ Partial Class FrmDashBoard
         Me.BtnEmpleados.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEmpleados.Image = CType(resources.GetObject("BtnEmpleados.Image"), System.Drawing.Image)
         Me.BtnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnEmpleados.Location = New System.Drawing.Point(0, 275)
+        Me.BtnEmpleados.Location = New System.Drawing.Point(1, 307)
         Me.BtnEmpleados.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnEmpleados.Name = "BtnEmpleados"
-        Me.BtnEmpleados.Size = New System.Drawing.Size(315, 69)
+        Me.BtnEmpleados.Size = New System.Drawing.Size(314, 69)
         Me.BtnEmpleados.TabIndex = 2
         Me.BtnEmpleados.Tag = "Empleados"
         Me.BtnEmpleados.Text = "  Empleados"
@@ -193,10 +214,10 @@ Partial Class FrmDashBoard
         Me.BtnClientes.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnClientes.Image = CType(resources.GetObject("BtnClientes.Image"), System.Drawing.Image)
         Me.BtnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnClientes.Location = New System.Drawing.Point(0, 200)
+        Me.BtnClientes.Location = New System.Drawing.Point(1, 220)
         Me.BtnClientes.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnClientes.Name = "BtnClientes"
-        Me.BtnClientes.Size = New System.Drawing.Size(315, 69)
+        Me.BtnClientes.Size = New System.Drawing.Size(314, 69)
         Me.BtnClientes.TabIndex = 1
         Me.BtnClientes.Tag = "Clientes"
         Me.BtnClientes.Text = "  Clientes"
@@ -212,10 +233,10 @@ Partial Class FrmDashBoard
         Me.BtnDashBoard.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDashBoard.Image = CType(resources.GetObject("BtnDashBoard.Image"), System.Drawing.Image)
         Me.BtnDashBoard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnDashBoard.Location = New System.Drawing.Point(0, 125)
+        Me.BtnDashBoard.Location = New System.Drawing.Point(1, 133)
         Me.BtnDashBoard.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnDashBoard.Name = "BtnDashBoard"
-        Me.BtnDashBoard.Size = New System.Drawing.Size(315, 69)
+        Me.BtnDashBoard.Size = New System.Drawing.Size(314, 69)
         Me.BtnDashBoard.TabIndex = 0
         Me.BtnDashBoard.Tag = "Dashboard"
         Me.BtnDashBoard.Text = "  Dashboard"
@@ -225,7 +246,7 @@ Partial Class FrmDashBoard
         '
         'PanelLogo
         '
-        Me.PanelLogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.PanelLogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.PanelLogo.Controls.Add(Me.BtnTogleMenu)
         Me.PanelLogo.Controls.Add(Me.LblLogo)
         Me.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top
@@ -257,7 +278,7 @@ Partial Class FrmDashBoard
         '
         'PanelTitulo
         '
-        Me.PanelTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.PanelTitulo.BackColor = System.Drawing.Color.White
         Me.PanelTitulo.Controls.Add(Me.LblUser)
         Me.PanelTitulo.Controls.Add(Me.Lbltitle)
         Me.PanelTitulo.Controls.Add(Me.BtnMinimaze)
@@ -266,7 +287,7 @@ Partial Class FrmDashBoard
         Me.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelTitulo.Location = New System.Drawing.Point(315, 0)
         Me.PanelTitulo.Name = "PanelTitulo"
-        Me.PanelTitulo.Size = New System.Drawing.Size(1088, 55)
+        Me.PanelTitulo.Size = New System.Drawing.Size(1340, 55)
         Me.PanelTitulo.TabIndex = 1
         '
         'LblUser
@@ -274,7 +295,7 @@ Partial Class FrmDashBoard
         Me.LblUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblUser.AutoSize = True
         Me.LblUser.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblUser.Location = New System.Drawing.Point(841, 14)
+        Me.LblUser.Location = New System.Drawing.Point(1093, 14)
         Me.LblUser.Name = "LblUser"
         Me.LblUser.Size = New System.Drawing.Size(53, 28)
         Me.LblUser.TabIndex = 2
@@ -296,7 +317,7 @@ Partial Class FrmDashBoard
         Me.BtnMinimaze.FlatAppearance.BorderSize = 0
         Me.BtnMinimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMinimaze.Image = Global.SGN.UI.Windows.My.Resources.Resources.minimize32
-        Me.BtnMinimaze.Location = New System.Drawing.Point(943, 3)
+        Me.BtnMinimaze.Location = New System.Drawing.Point(1195, 3)
         Me.BtnMinimaze.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnMinimaze.Name = "BtnMinimaze"
         Me.BtnMinimaze.Size = New System.Drawing.Size(38, 38)
@@ -309,7 +330,7 @@ Partial Class FrmDashBoard
         Me.BtnMaximaze.FlatAppearance.BorderSize = 0
         Me.BtnMaximaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnMaximaze.Image = CType(resources.GetObject("BtnMaximaze.Image"), System.Drawing.Image)
-        Me.BtnMaximaze.Location = New System.Drawing.Point(993, 3)
+        Me.BtnMaximaze.Location = New System.Drawing.Point(1245, 3)
         Me.BtnMaximaze.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnMaximaze.Name = "BtnMaximaze"
         Me.BtnMaximaze.Size = New System.Drawing.Size(38, 38)
@@ -322,7 +343,7 @@ Partial Class FrmDashBoard
         Me.BtnClose.FlatAppearance.BorderSize = 0
         Me.BtnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnClose.Image = Global.SGN.UI.Windows.My.Resources.Resources.close32
-        Me.BtnClose.Location = New System.Drawing.Point(1045, 3)
+        Me.BtnClose.Location = New System.Drawing.Point(1297, 3)
         Me.BtnClose.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnClose.Name = "BtnClose"
         Me.BtnClose.Size = New System.Drawing.Size(38, 38)
@@ -337,7 +358,7 @@ Partial Class FrmDashBoard
         Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelDesktop.Location = New System.Drawing.Point(315, 55)
         Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(1088, 686)
+        Me.PanelDesktop.Size = New System.Drawing.Size(1340, 845)
         Me.PanelDesktop.TabIndex = 2
         '
         'LblHora
@@ -345,11 +366,11 @@ Partial Class FrmDashBoard
         Me.LblHora.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LblHora.AutoSize = True
         Me.LblHora.Font = New System.Drawing.Font("Segoe UI Semibold", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblHora.Location = New System.Drawing.Point(488, 360)
+        Me.LblHora.Location = New System.Drawing.Point(534, 439)
         Me.LblHora.Name = "LblHora"
-        Me.LblHora.Size = New System.Drawing.Size(112, 54)
+        Me.LblHora.Size = New System.Drawing.Size(273, 54)
         Me.LblHora.TabIndex = 3
-        Me.LblHora.Text = "Hora"
+        Me.LblHora.Text = "00:00:00 a. m."
         Me.LblHora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LblFecha
@@ -357,11 +378,11 @@ Partial Class FrmDashBoard
         Me.LblFecha.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LblFecha.AutoSize = True
         Me.LblFecha.Font = New System.Drawing.Font("Segoe UI Semibold", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblFecha.Location = New System.Drawing.Point(474, 272)
+        Me.LblFecha.Location = New System.Drawing.Point(326, 351)
         Me.LblFecha.Name = "LblFecha"
-        Me.LblFecha.Size = New System.Drawing.Size(140, 60)
+        Me.LblFecha.Size = New System.Drawing.Size(689, 60)
         Me.LblFecha.TabIndex = 2
-        Me.LblFecha.Text = "Fecha"
+        Me.LblFecha.Text = "Viernes, 11 de noviembre de 2022"
         Me.LblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Timer
@@ -372,8 +393,8 @@ Partial Class FrmDashBoard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1403, 741)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1655, 900)
         Me.Controls.Add(Me.PanelDesktop)
         Me.Controls.Add(Me.PanelTitulo)
         Me.Controls.Add(Me.PanelMenu)
@@ -414,4 +435,5 @@ Partial Class FrmDashBoard
     Friend WithEvents LblFecha As Label
     Friend WithEvents Timer As Timer
     Friend WithEvents LblUser As Label
+    Friend WithEvents Button1 As Button
 End Class

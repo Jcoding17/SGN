@@ -1,18 +1,20 @@
 ﻿Imports SGN.BLL
 Imports SGN.Entity
 
-Public Class FrmMantenimientoCliente
+Public Class FrmMantemientoEmpleados
 
     Public creating As Boolean = False
     Private Sub Nuevo()
         TxtId.Text = 0
         TxtNombre.Clear()
         TxtApellido.Clear()
+        TxtEdad.Clear()
         TxtNoDoc.Clear()
         TxtTelefono.Clear()
         TxtEmail.Clear()
         TxtDireccion.Clear()
         CargarTipoDoc()
+        CargarCargos()
         TxtNombre.Select()
     End Sub
 
@@ -20,6 +22,12 @@ Public Class FrmMantenimientoCliente
         CboxIdDoc.ValueMember = "Id"
         CboxIdDoc.DisplayMember = "Nombre"
         CboxIdDoc.DataSource = TipoDocBLL.GetAll()
+    End Sub
+
+    Private Sub CargarCargos()
+        CboxIdCargo.ValueMember = "Id"
+        CboxIdCargo.DisplayMember = "Nombre"
+        CboxIdCargo.DataSource = CargoBLL.GetAll()
     End Sub
 
     Private Function ValidarDatos() As Boolean
@@ -42,27 +50,29 @@ Public Class FrmMantenimientoCliente
             Return
         End If
 
-        Dim OCliente As New ClienteEntity
-        OCliente.Id = Convert.ToInt32(TxtId.Text)
-        OCliente.Nombre = TxtNombre.Text
-        OCliente.Apellido = TxtApellido.Text
-        OCliente.IdDoc = CboxIdDoc.SelectedValue
-        OCliente.NoDoc = TxtNoDoc.Text
-        OCliente.Telefono = TxtTelefono.Text
-        OCliente.Email = TxtEmail.Text
-        OCliente.Direccion = TxtDireccion.Text
-
+        Dim Oempleado As New EmpleadoEntity
+        Oempleado.Id = Convert.ToInt32(TxtId.Text)
+        Oempleado.Nombre = TxtNombre.Text
+        Oempleado.Apellido = TxtApellido.Text
+        Oempleado.Edad = TxtEdad.Text
+        Oempleado.IdDoc = CboxIdDoc.SelectedValue
+        Oempleado.NoDoc = TxtNoDoc.Text
+        Oempleado.Telefono = TxtTelefono.Text
+        Oempleado.Email = TxtEmail.Text
+        Oempleado.Direccion = TxtDireccion.Text
+        Oempleado.IdCargo = CboxIdCargo.SelectedValue
 
         Try
-            ClienteBLL.Create(OCliente)
-            MessageBox.Show("Cliente guardado con exito", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Information)
+            EmpleadoBLL.Create(Oempleado)
+            MessageBox.Show("Empleado guardado con exito", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Information)
             Nuevo()
         Catch ex As Exception
             MessageBox.Show(ex.Message, ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub
-    Private Sub FrmMantenimientoCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub FrmMantemientoEmpleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If creating = True Then
             Nuevo()
         End If

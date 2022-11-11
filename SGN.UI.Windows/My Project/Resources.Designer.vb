@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property add32() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("add32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property addcircle32() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("addcircle32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property buscar32() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("buscar32", resourceCulture)
@@ -166,6 +186,16 @@ Namespace My.Resources
         Friend ReadOnly Property minimize32() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("minimize32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property proveedor32() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("proveedor32", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

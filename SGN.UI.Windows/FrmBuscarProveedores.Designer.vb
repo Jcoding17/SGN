@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmBuscarClientes
+Partial Class FrmBuscarProveedores
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,38 +22,58 @@ Partial Class FrmBuscarClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarClientes))
-        Me.DgvClientes = New System.Windows.Forms.DataGridView()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarProveedores))
+        Me.TxtBuscar = New System.Windows.Forms.TextBox()
+        Me.Lbltitle = New System.Windows.Forms.Label()
+        Me.DgvProveedores = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IDDoc = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.NoDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Email = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Lbltitle = New System.Windows.Forms.Label()
-        Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.BtnBorrar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.BtnActualizar = New System.Windows.Forms.Button()
-        CType(Me.DgvClientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgvProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DgvClientes
+        'TxtBuscar
         '
-        Me.DgvClientes.AllowUserToAddRows = False
-        Me.DgvClientes.AllowUserToDeleteRows = False
-        Me.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Apellido, Me.IDDoc, Me.NoDoc, Me.Telefono, Me.Email, Me.Direccion})
-        Me.DgvClientes.Location = New System.Drawing.Point(18, 91)
-        Me.DgvClientes.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.DgvClientes.Name = "DgvClientes"
-        Me.DgvClientes.ReadOnly = True
-        Me.DgvClientes.RowHeadersWidth = 62
-        Me.DgvClientes.Size = New System.Drawing.Size(964, 431)
-        Me.DgvClientes.TabIndex = 0
+        Me.TxtBuscar.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TxtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtBuscar.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBuscar.ForeColor = System.Drawing.Color.Black
+        Me.TxtBuscar.Location = New System.Drawing.Point(125, 22)
+        Me.TxtBuscar.Name = "TxtBuscar"
+        Me.TxtBuscar.Size = New System.Drawing.Size(791, 38)
+        Me.TxtBuscar.TabIndex = 23
+        '
+        'Lbltitle
+        '
+        Me.Lbltitle.AutoSize = True
+        Me.Lbltitle.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbltitle.Location = New System.Drawing.Point(22, 25)
+        Me.Lbltitle.Name = "Lbltitle"
+        Me.Lbltitle.Size = New System.Drawing.Size(86, 32)
+        Me.Lbltitle.TabIndex = 19
+        Me.Lbltitle.Text = "Buscar"
+        '
+        'DgvProveedores
+        '
+        Me.DgvProveedores.AllowUserToAddRows = False
+        Me.DgvProveedores.AllowUserToDeleteRows = False
+        Me.DgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgvProveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.IDDoc, Me.NoDoc, Me.Telefono, Me.Email, Me.Direccion})
+        Me.DgvProveedores.Location = New System.Drawing.Point(24, 92)
+        Me.DgvProveedores.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DgvProveedores.Name = "DgvProveedores"
+        Me.DgvProveedores.ReadOnly = True
+        Me.DgvProveedores.RowHeadersWidth = 62
+        Me.DgvProveedores.Size = New System.Drawing.Size(964, 431)
+        Me.DgvProveedores.TabIndex = 18
         '
         'ID
         '
@@ -72,15 +92,6 @@ Partial Class FrmBuscarClientes
         Me.Nombre.Name = "Nombre"
         Me.Nombre.ReadOnly = True
         Me.Nombre.Width = 150
-        '
-        'Apellido
-        '
-        Me.Apellido.DataPropertyName = "Apellido"
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.MinimumWidth = 8
-        Me.Apellido.Name = "Apellido"
-        Me.Apellido.ReadOnly = True
-        Me.Apellido.Width = 150
         '
         'IDDoc
         '
@@ -128,27 +139,6 @@ Partial Class FrmBuscarClientes
         Me.Direccion.ReadOnly = True
         Me.Direccion.Width = 150
         '
-        'Lbltitle
-        '
-        Me.Lbltitle.AutoSize = True
-        Me.Lbltitle.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbltitle.Location = New System.Drawing.Point(16, 24)
-        Me.Lbltitle.Name = "Lbltitle"
-        Me.Lbltitle.Size = New System.Drawing.Size(86, 32)
-        Me.Lbltitle.TabIndex = 2
-        Me.Lbltitle.Text = "Buscar"
-        '
-        'TxtBuscar
-        '
-        Me.TxtBuscar.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TxtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtBuscar.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBuscar.ForeColor = System.Drawing.Color.Black
-        Me.TxtBuscar.Location = New System.Drawing.Point(119, 21)
-        Me.TxtBuscar.Name = "TxtBuscar"
-        Me.TxtBuscar.Size = New System.Drawing.Size(791, 38)
-        Me.TxtBuscar.TabIndex = 16
-        '
         'BtnBorrar
         '
         Me.BtnBorrar.BackColor = System.Drawing.Color.Transparent
@@ -157,11 +147,11 @@ Partial Class FrmBuscarClientes
         Me.BtnBorrar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBorrar.Image = CType(resources.GetObject("BtnBorrar.Image"), System.Drawing.Image)
         Me.BtnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnBorrar.Location = New System.Drawing.Point(1004, 344)
+        Me.BtnBorrar.Location = New System.Drawing.Point(1010, 345)
         Me.BtnBorrar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnBorrar.Name = "BtnBorrar"
         Me.BtnBorrar.Size = New System.Drawing.Size(165, 61)
-        Me.BtnBorrar.TabIndex = 8
+        Me.BtnBorrar.TabIndex = 22
         Me.BtnBorrar.Tag = ""
         Me.BtnBorrar.Text = "  Borrar"
         Me.BtnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -176,11 +166,11 @@ Partial Class FrmBuscarClientes
         Me.BtnNuevo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNuevo.Image = CType(resources.GetObject("BtnNuevo.Image"), System.Drawing.Image)
         Me.BtnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnNuevo.Location = New System.Drawing.Point(1004, 182)
+        Me.BtnNuevo.Location = New System.Drawing.Point(1010, 183)
         Me.BtnNuevo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(165, 61)
-        Me.BtnNuevo.TabIndex = 6
+        Me.BtnNuevo.TabIndex = 21
         Me.BtnNuevo.Tag = ""
         Me.BtnNuevo.Text = "  Nuevo"
         Me.BtnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -195,11 +185,11 @@ Partial Class FrmBuscarClientes
         Me.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBuscar.Image = Global.SGN.UI.Windows.My.Resources.Resources.buscar32
-        Me.BtnBuscar.Location = New System.Drawing.Point(920, 16)
+        Me.BtnBuscar.Location = New System.Drawing.Point(926, 17)
         Me.BtnBuscar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(48, 49)
-        Me.BtnBuscar.TabIndex = 4
+        Me.BtnBuscar.TabIndex = 20
         Me.BtnBuscar.Tag = ""
         Me.BtnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.BtnBuscar.UseVisualStyleBackColor = False
@@ -213,14 +203,14 @@ Partial Class FrmBuscarClientes
         Me.BtnActualizar.ForeColor = System.Drawing.Color.Black
         Me.BtnActualizar.Image = Global.SGN.UI.Windows.My.Resources.Resources.cliente32
         Me.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnActualizar.Location = New System.Drawing.Point(1004, 263)
+        Me.BtnActualizar.Location = New System.Drawing.Point(1010, 264)
         Me.BtnActualizar.Name = "BtnActualizar"
         Me.BtnActualizar.Size = New System.Drawing.Size(165, 61)
-        Me.BtnActualizar.TabIndex = 17
+        Me.BtnActualizar.TabIndex = 24
         Me.BtnActualizar.Text = "    Actualizar"
         Me.BtnActualizar.UseVisualStyleBackColor = False
         '
-        'FrmBuscarClientes
+        'FrmBuscarProveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -232,27 +222,24 @@ Partial Class FrmBuscarClientes
         Me.Controls.Add(Me.BtnNuevo)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.Lbltitle)
-        Me.Controls.Add(Me.DgvClientes)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Controls.Add(Me.DgvProveedores)
         Me.MaximizeBox = False
-        Me.Name = "FrmBuscarClientes"
+        Me.Name = "FrmBuscarProveedores"
         Me.ShowIcon = False
-        Me.Text = "Buscar Clientes"
-        CType(Me.DgvClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Buscar Proveedores"
+        CType(Me.DgvProveedores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents DgvClientes As DataGridView
-    Friend WithEvents Lbltitle As Label
-    Friend WithEvents BtnBuscar As Button
-    Friend WithEvents BtnNuevo As Button
-    Friend WithEvents BtnBorrar As Button
     Friend WithEvents TxtBuscar As TextBox
+    Friend WithEvents BtnBorrar As Button
+    Friend WithEvents BtnNuevo As Button
+    Friend WithEvents BtnBuscar As Button
+    Friend WithEvents Lbltitle As Label
+    Friend WithEvents DgvProveedores As DataGridView
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
-    Friend WithEvents Apellido As DataGridViewTextBoxColumn
     Friend WithEvents IDDoc As DataGridViewComboBoxColumn
     Friend WithEvents NoDoc As DataGridViewTextBoxColumn
     Friend WithEvents Telefono As DataGridViewTextBoxColumn

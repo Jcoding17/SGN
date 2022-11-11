@@ -1,13 +1,12 @@
 ﻿Imports SGN.BLL
 Imports SGN.Entity
 
-Public Class FrmMantenimientoCliente
+Public Class FrmMantenimientoProveedor
 
     Public creating As Boolean = False
     Private Sub Nuevo()
         TxtId.Text = 0
         TxtNombre.Clear()
-        TxtApellido.Clear()
         TxtNoDoc.Clear()
         TxtTelefono.Clear()
         TxtEmail.Clear()
@@ -42,27 +41,27 @@ Public Class FrmMantenimientoCliente
             Return
         End If
 
-        Dim OCliente As New ClienteEntity
-        OCliente.Id = Convert.ToInt32(TxtId.Text)
-        OCliente.Nombre = TxtNombre.Text
-        OCliente.Apellido = TxtApellido.Text
-        OCliente.IdDoc = CboxIdDoc.SelectedValue
-        OCliente.NoDoc = TxtNoDoc.Text
-        OCliente.Telefono = TxtTelefono.Text
-        OCliente.Email = TxtEmail.Text
-        OCliente.Direccion = TxtDireccion.Text
+        Dim OProveedor As New ProveedorEntity
+        OProveedor.Id = Convert.ToInt32(TxtId.Text)
+        OProveedor.Nombre = TxtNombre.Text
+        OProveedor.IdDoc = CboxIdDoc.SelectedValue
+        OProveedor.NoDoc = TxtNoDoc.Text
+        OProveedor.Telefono = TxtTelefono.Text
+        OProveedor.Email = TxtEmail.Text
+        OProveedor.Direccion = TxtDireccion.Text
 
 
         Try
-            ClienteBLL.Create(OCliente)
-            MessageBox.Show("Cliente guardado con exito", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ProveedorBLL.Create(OProveedor)
+            MessageBox.Show("Proveedor guardado con exito", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Information)
             Nuevo()
         Catch ex As Exception
             MessageBox.Show(ex.Message, ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub
-    Private Sub FrmMantenimientoCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub FrmMantenimientoProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If creating = True Then
             Nuevo()
         End If

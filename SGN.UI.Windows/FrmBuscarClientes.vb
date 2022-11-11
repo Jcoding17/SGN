@@ -1,5 +1,4 @@
-﻿Imports System.Runtime.Versioning
-Imports SGN.BLL
+﻿Imports SGN.BLL
 Imports SGN.Entity
 
 Public Class FrmBuscarClientes
@@ -43,35 +42,40 @@ Public Class FrmBuscarClientes
             frm.TxtEmail.Text = OCliente.Email
             frm.TxtDireccion.Text = OCliente.Direccion
             frm.BtnNuevo.Enabled = False
+            frm.BtnNuevo.Visible = False
             frm.ShowDialog()
+            DgvClientes.DataSource = ClienteBLL.GetAll()
+        Else
+            MessageBox.Show("Por favor seleccione una fila", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
+
     End Sub
 
     Private Sub Buscar()
-        If CboxBuscarBy.SelectedIndex = 0 Then
-            DgvClientes.DataSource = ClienteBLL.GetAll()
-            TxtBuscar.Enabled = False
-        ElseIf CboxBuscarBy.SelectedIndex = 1 And IsNumeric(TxtBuscar.Text) Then
-            DgvClientes.DataSource = ClienteBLL.GetById(Convert.ToInt32(TxtBuscar.Text))
-            TxtBuscar.Enabled = True
-        ElseIf CboxBuscarBy.SelectedIndex = 2 Then
+
+        If TxtBuscar.Text <> "" Then
             DgvClientes.DataSource = ClienteBLL.GetByValue(TxtBuscar.Text)
-            TxtBuscar.Enabled = True
+        Else
+            DgvClientes.DataSource = ClienteBLL.GetAll()
         End If
     End Sub
 
     Private Sub DeleteCliente()
         If DgvClientes.SelectedRows.Count > 0 Then
+
             If MessageBox.Show("¿Seguro que desea eliminar el cliente?", ActiveUser.Msg, MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                 _idcliente = DgvClientes.CurrentRow.Cells(0).Value
                 ClienteBLL.Delete(Idcliente)
                 DgvClientes.DataSource = ClienteBLL.GetAll()
             End If
+
+        Else
+            MessageBox.Show("Por favor seleccione una fila", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
+
     End Sub
 
     Private Sub FrmBuscarClientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CboxBuscarBy.SelectedIndex = 0
         DgvClientes.AutoGenerateColumns = False
         DgvClientes.DataSource = ClienteBLL.GetAll()
         GetAllTipoDoc()
@@ -84,10 +88,6 @@ Public Class FrmBuscarClientes
         DgvClientes.DataSource = ClienteBLL.GetAll()
     End Sub
 
-    Private Sub BtnActualizar_Click(sender As Object, e As EventArgs) Handles BtnActualizar.Click
-        UpdateCliente()
-    End Sub
-
     Private Sub BtnBorrar_Click(sender As Object, e As EventArgs) Handles BtnBorrar.Click
         DeleteCliente()
     End Sub
@@ -96,4 +96,7 @@ Public Class FrmBuscarClientes
         Buscar()
     End Sub
 
+    Private Sub BtnActualizar_Click(sender As Object, e As EventArgs) Handles BtnActualizar.Click
+        UpdateCliente()
+    End Sub
 End Class

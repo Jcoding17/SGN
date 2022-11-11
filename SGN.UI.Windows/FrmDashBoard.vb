@@ -126,4 +126,14 @@ Public Class FrmDashBoard
             Close()
         End If
     End Sub
+
+    Private Sub BtnEmpleados_Click(sender As Object, e As EventArgs) Handles BtnEmpleados.Click
+        ActivateButton(sender)
+        OpenChildForm(New FrmBuscarEmpleados)
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ActivateButton(sender)
+        OpenChildForm(New FrmBuscarProveedores)
+    End Sub
 End Class
