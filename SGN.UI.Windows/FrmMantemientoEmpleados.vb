@@ -90,4 +90,11 @@ Public Class FrmMantemientoEmpleados
         Guardar()
     End Sub
 
+    Private Sub BtnAgregarCargo_Click(sender As Object, e As EventArgs) Handles BtnAgregarCargo.Click
+        Dim frm As New FrmMantenimientoCargo
+        frm.creating = True
+        frm.ShowDialog()
+        CargarCargos()
+    End Sub
+
 End Class

@@ -53,6 +53,31 @@ Public Class CargoDAL
 
     End Function
 
+    Public Shared Function GetById(id As Integer) As CargoEntity
+
+        Dim cargo As CargoEntity = Nothing
+
+        Using conex As New SqlConnection(SqlStringConnection)
+
+            conex.Open()
+
+            Using cmd As New SqlCommand("GetByIdCargo", conex)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@id", id)
+
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                If reader.Read() Then
+                    cargo = ConvertToObject(reader)
+                End If
+            End Using
+
+        End Using
+
+        Return cargo
+
+    End Function
+
     Public Shared Function GetAll() As List(Of CargoEntity)
 
         Dim list As New List(Of CargoEntity)

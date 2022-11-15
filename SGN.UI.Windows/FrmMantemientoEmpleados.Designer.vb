@@ -48,6 +48,7 @@ Partial Class FrmMantemientoEmpleados
         Me.Label10 = New System.Windows.Forms.Label()
         Me.CboxIdCargo = New System.Windows.Forms.ComboBox()
         Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.BtnAgregarCargo = New System.Windows.Forms.Button()
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -309,7 +310,7 @@ Partial Class FrmMantemientoEmpleados
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(12, 478)
+        Me.Label10.Location = New System.Drawing.Point(12, 479)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(79, 32)
@@ -333,12 +334,27 @@ Partial Class FrmMantemientoEmpleados
         '
         Me.ErrorProvider.ContainerControl = Me
         '
+        'BtnAgregarCargo
+        '
+        Me.BtnAgregarCargo.BackColor = System.Drawing.Color.White
+        Me.BtnAgregarCargo.FlatAppearance.BorderSize = 0
+        Me.BtnAgregarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnAgregarCargo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAgregarCargo.ForeColor = System.Drawing.Color.Black
+        Me.BtnAgregarCargo.Image = Global.SGN.UI.Windows.My.Resources.Resources.addcircle32
+        Me.BtnAgregarCargo.Location = New System.Drawing.Point(89, 476)
+        Me.BtnAgregarCargo.Name = "BtnAgregarCargo"
+        Me.BtnAgregarCargo.Size = New System.Drawing.Size(44, 41)
+        Me.BtnAgregarCargo.TabIndex = 87
+        Me.BtnAgregarCargo.UseVisualStyleBackColor = False
+        '
         'FrmMantemientoEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(806, 676)
+        Me.Controls.Add(Me.BtnAgregarCargo)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.CboxIdCargo)
         Me.Controls.Add(Me.Label9)
@@ -398,4 +414,5 @@ Partial Class FrmMantemientoEmpleados
     Friend WithEvents Label10 As Label
     Friend WithEvents CboxIdCargo As ComboBox
     Friend WithEvents ErrorProvider As ErrorProvider
+    Friend WithEvents BtnAgregarCargo As Button
 End Class

@@ -1,7 +1,7 @@
 ﻿Imports SGN.BLL
 Imports SGN.Entity
 
-Public Class FrmMantenimientoMarca
+Public Class FrmMantenimientoCargo
 
     Public creating As Boolean = False
     Private Sub Nuevo()
@@ -30,13 +30,13 @@ Public Class FrmMantenimientoMarca
             Return
         End If
 
-        Dim OMarca As New MarcaEntity
-        OMarca.Id = Convert.ToInt32(TxtId.Text)
-        OMarca.Nombre = TxtNombre.Text
+        Dim OCargo As New CargoEntity
+        OCargo.Id = Convert.ToInt32(TxtId.Text)
+        OCargo.Nombre = TxtNombre.Text
 
         Try
-            MarcaBLL.Create(OMarca)
-            MessageBox.Show("Marca guardada con exito", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Information)
+            CargoBLL.Create(OCargo)
+            MessageBox.Show("Cargo guardado con exito", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Information)
             Nuevo()
         Catch ex As Exception
             MessageBox.Show(ex.Message, ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -44,7 +44,7 @@ Public Class FrmMantenimientoMarca
 
     End Sub
 
-    Private Sub FrmMantenimientoMarca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FrmMantenimientoCargo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If creating = True Then
             Nuevo()
         End If

@@ -4,6 +4,7 @@
     'Variables which recieve the log in user's datas'
 
     Public Nombre
+    Public Apellido
     Public Cargo
     Public Id
 

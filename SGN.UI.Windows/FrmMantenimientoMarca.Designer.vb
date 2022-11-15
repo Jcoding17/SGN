@@ -22,6 +22,7 @@ Partial Class FrmMantenimientoMarca
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.BtnCancelar = New System.Windows.Forms.Button()
         Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -30,6 +31,8 @@ Partial Class FrmMantenimientoMarca
         Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtId = New System.Windows.Forms.TextBox()
         Me.Lbltitle = New System.Windows.Forms.Label()
+        Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
+        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnCancelar
@@ -130,6 +133,10 @@ Partial Class FrmMantenimientoMarca
         Me.Lbltitle.TabIndex = 38
         Me.Lbltitle.Text = "Mantenimiento Marca"
         '
+        'ErrorProvider
+        '
+        Me.ErrorProvider.ContainerControl = Me
+        '
         'FrmMantenimientoMarca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -148,6 +155,7 @@ Partial Class FrmMantenimientoMarca
         Me.Name = "FrmMantenimientoMarca"
         Me.ShowIcon = False
         Me.Text = "Mantenimiento Marca"
+        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,4 +169,5 @@ Partial Class FrmMantenimientoMarca
     Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtId As TextBox
     Friend WithEvents Lbltitle As Label
+    Friend WithEvents ErrorProvider As ErrorProvider
 End Class

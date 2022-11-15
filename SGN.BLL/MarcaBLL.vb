@@ -14,6 +14,9 @@ Public Class MarcaBLL
         Return MarcaDAL.Delete(id)
     End Function
 
+    Public Shared Function GetById(id As Integer) As MarcaEntity
+        Return MarcaDAL.GetById(id)
+    End Function
     Public Shared Function GetAll() As List(Of MarcaEntity)
         Return MarcaDAL.GetAll()
     End Function

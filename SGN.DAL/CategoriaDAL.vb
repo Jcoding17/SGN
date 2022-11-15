@@ -53,6 +53,31 @@ Public Class CategoriaDAL
 
     End Function
 
+    Public Shared Function GetById(id As Integer) As CategoriaEntity
+
+        Dim categoria As CategoriaEntity = Nothing
+
+        Using conex As New SqlConnection(SqlStringConnection)
+
+            conex.Open()
+
+            Using cmd As New SqlCommand("GetByIdCategoria", conex)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@id", id)
+
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                If reader.Read() Then
+                    categoria = ConvertToObject(reader)
+                End If
+            End Using
+
+        End Using
+
+        Return categoria
+
+    End Function
+
     Public Shared Function GetAll() As List(Of CategoriaEntity)
 
         Dim list As New List(Of CategoriaEntity)

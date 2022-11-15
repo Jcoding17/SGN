@@ -14,6 +14,10 @@ Public Class CategoriaBLL
         Return CategoriaDAL.Delete(id)
     End Function
 
+    Public Shared Function GetById(id As Integer) As CategoriaEntity
+        Return CategoriaDAL.GetById(id)
+    End Function
+
     Public Shared Function GetAll() As List(Of CategoriaEntity)
         Return CategoriaDAL.GetAll()
     End Function

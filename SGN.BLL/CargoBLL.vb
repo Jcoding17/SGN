@@ -14,6 +14,10 @@ Public Class CargoBLL
         Return CargoDAL.Delete(id)
     End Function
 
+    Public Shared Function GetById(id As Integer) As CargoEntity
+        Return CargoDAL.GetById(id)
+    End Function
+
     Public Shared Function GetAll() As List(Of CargoEntity)
         Return CargoDAL.GetAll()
     End Function

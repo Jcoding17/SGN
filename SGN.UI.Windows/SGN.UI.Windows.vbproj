@@ -79,6 +79,12 @@
     <Compile Include="FrmBuscarArticulos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmBuscarCargo.Designer.vb">
+      <DependentUpon>FrmBuscarCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmBuscarCategoria.Designer.vb">
       <DependentUpon>FrmBuscarCategoria.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,12 @@
     <Compile Include="FrmMantenimientoArticulo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMantenimientoCargo.Designer.vb">
+      <DependentUpon>FrmMantenimientoCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMantenimientoCategoria.Designer.vb">
       <DependentUpon>FrmMantenimientoCategoria.vb</DependentUpon>
     </Compile>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="FrmBuscarArticulos.resx">
       <DependentUpon>FrmBuscarArticulos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarCargo.resx">
+      <DependentUpon>FrmBuscarCargo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscarCategoria.resx">
       <DependentUpon>FrmBuscarCategoria.vb</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoArticulo.resx">
       <DependentUpon>FrmMantenimientoArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoCargo.resx">
+      <DependentUpon>FrmMantenimientoCargo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoCategoria.resx">
       <DependentUpon>FrmMantenimientoCategoria.vb</DependentUpon>

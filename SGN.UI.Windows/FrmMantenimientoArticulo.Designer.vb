@@ -22,6 +22,7 @@ Partial Class FrmMantenimientoArticulo
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.CboxIdCategoria = New System.Windows.Forms.ComboBox()
         Me.BtnCancelar = New System.Windows.Forms.Button()
@@ -44,6 +45,8 @@ Partial Class FrmMantenimientoArticulo
         Me.Lbltitle = New System.Windows.Forms.Label()
         Me.BtnAgregarCategoria = New System.Windows.Forms.Button()
         Me.BtnAgregarMarca = New System.Windows.Forms.Button()
+        Me.ErrorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
+        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label10
@@ -308,6 +311,10 @@ Partial Class FrmMantenimientoArticulo
         Me.BtnAgregarMarca.TabIndex = 86
         Me.BtnAgregarMarca.UseVisualStyleBackColor = False
         '
+        'ErrorProvider
+        '
+        Me.ErrorProvider.ContainerControl = Me
+        '
         'FrmMantenimientoArticulo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -340,6 +347,7 @@ Partial Class FrmMantenimientoArticulo
         Me.Name = "FrmMantenimientoArticulo"
         Me.ShowIcon = False
         Me.Text = "Mantenimiento Articulo"
+        CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -367,4 +375,5 @@ Partial Class FrmMantenimientoArticulo
     Friend WithEvents Lbltitle As Label
     Friend WithEvents BtnAgregarMarca As Button
     Friend WithEvents BtnAgregarCategoria As Button
+    Friend WithEvents ErrorProvider As ErrorProvider
 End Class

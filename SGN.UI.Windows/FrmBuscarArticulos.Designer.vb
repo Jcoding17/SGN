@@ -23,9 +23,9 @@ Partial Class FrmBuscarArticulos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarArticulos))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BtnActualizar = New System.Windows.Forms.Button()
         Me.TxtBuscar = New System.Windows.Forms.TextBox()
         Me.BtnBorrar = New System.Windows.Forms.Button()
@@ -201,9 +201,9 @@ Partial Class FrmBuscarArticulos
         'PrecioCompra
         '
         Me.PrecioCompra.DataPropertyName = "PrecioCompra"
-        DataGridViewCellStyle1.Format = "N2"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.PrecioCompra.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Format = "N2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.PrecioCompra.DefaultCellStyle = DataGridViewCellStyle4
         Me.PrecioCompra.HeaderText = "Precio Compra"
         Me.PrecioCompra.MinimumWidth = 8
         Me.PrecioCompra.Name = "PrecioCompra"
@@ -213,8 +213,8 @@ Partial Class FrmBuscarArticulos
         'PrecioVenta
         '
         Me.PrecioVenta.DataPropertyName = "PrecioVenta"
-        DataGridViewCellStyle2.Format = "N2"
-        Me.PrecioVenta.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Format = "N2"
+        Me.PrecioVenta.DefaultCellStyle = DataGridViewCellStyle5
         Me.PrecioVenta.HeaderText = "Precio Venta"
         Me.PrecioVenta.MinimumWidth = 8
         Me.PrecioVenta.Name = "PrecioVenta"
@@ -226,8 +226,8 @@ Partial Class FrmBuscarArticulos
         'Stock
         '
         Me.Stock.DataPropertyName = "Stock"
-        DataGridViewCellStyle3.Format = "N0"
-        Me.Stock.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Format = "N0"
+        Me.Stock.DefaultCellStyle = DataGridViewCellStyle6
         Me.Stock.HeaderText = "Stock"
         Me.Stock.MinimumWidth = 8
         Me.Stock.Name = "Stock"

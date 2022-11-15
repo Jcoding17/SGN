@@ -63,6 +63,31 @@ Public Class UsuarioDAL
 
     End Function
 
+    Public Shared Function GetById(id As Integer) As UsuarioEntity
+
+        Dim user As UsuarioEntity = Nothing
+
+        Using conex As New SqlConnection(SqlStringConnection)
+
+            conex.Open()
+
+            Using cmd As New SqlCommand("GetByIdUser", conex)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@id", id)
+
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                If reader.Read() Then
+                    user = ConvertToObject(reader)
+                End If
+            End Using
+
+        End Using
+
+        Return user
+
+    End Function
+
     Public Shared Function GetAll() As List(Of UsuarioEntity)
 
         Dim list As New List(Of UsuarioEntity)
@@ -121,8 +146,9 @@ Public Class UsuarioDAL
                     While reader.Read()
                         'Aqui guardamos los datos del usuario que se esta logeando en el sistema'
                         ActiveUser.Nombre = reader.GetString(0)
-                        ActiveUser.Id = reader.GetInt32(1)
-                        ActiveUser.Cargo = reader.GetString(2)
+                        ActiveUser.Apellido = reader.GetString(1)
+                        ActiveUser.Id = reader.GetInt32(2)
+                        ActiveUser.Cargo = reader.GetString(3)
                     End While
 
                     Return True

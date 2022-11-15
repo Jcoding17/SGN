@@ -53,6 +53,31 @@ Public Class MarcaDAL
 
     End Function
 
+    Public Shared Function GetById(id As Integer) As MarcaEntity
+
+        Dim marca As MarcaEntity = Nothing
+
+        Using conex As New SqlConnection(SqlStringConnection)
+
+            conex.Open()
+
+            Using cmd As New SqlCommand("GetByIdMarca", conex)
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("@id", id)
+
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                If reader.Read() Then
+                    marca = ConvertToObject(reader)
+                End If
+            End Using
+
+        End Using
+
+        Return marca
+
+    End Function
+
     Public Shared Function GetAll() As List(Of MarcaEntity)
 
         Dim list As New List(Of MarcaEntity)

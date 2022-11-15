@@ -58,6 +58,7 @@ Public Class FrmBuscarEmpleados
             frm.BtnNuevo.Enabled = False
             frm.BtnNuevo.Visible = False
             frm.ShowDialog()
+            GetAllCargos()
             DgvEmpleados.DataSource = EmpleadoBLL.GetAll()
         Else
             MessageBox.Show("Por favor seleccione una fila", ActiveUser.Msg, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -100,6 +101,7 @@ Public Class FrmBuscarEmpleados
         Dim frm As New FrmMantemientoEmpleados
         frm.creating = True
         frm.ShowDialog()
+        GetAllCargos()
         DgvEmpleados.DataSource = EmpleadoBLL.GetAll()
     End Sub
 

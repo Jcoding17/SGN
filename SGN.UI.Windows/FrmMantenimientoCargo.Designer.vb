@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmMantenimientoCategoria
+Partial Class FrmMantenimientoCargo
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -45,7 +45,7 @@ Partial Class FrmMantenimientoCategoria
         Me.BtnCancelar.Location = New System.Drawing.Point(9, 298)
         Me.BtnCancelar.Name = "BtnCancelar"
         Me.BtnCancelar.Size = New System.Drawing.Size(250, 55)
-        Me.BtnCancelar.TabIndex = 53
+        Me.BtnCancelar.TabIndex = 61
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
@@ -59,7 +59,7 @@ Partial Class FrmMantenimientoCategoria
         Me.BtnNuevo.Location = New System.Drawing.Point(275, 298)
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(250, 55)
-        Me.BtnNuevo.TabIndex = 52
+        Me.BtnNuevo.TabIndex = 60
         Me.BtnNuevo.Text = "Nuevo"
         Me.BtnNuevo.UseVisualStyleBackColor = False
         '
@@ -71,7 +71,7 @@ Partial Class FrmMantenimientoCategoria
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(91, 32)
-        Me.Label8.TabIndex = 51
+        Me.Label8.TabIndex = 59
         Me.Label8.Text = "Codigo"
         '
         'Label2
@@ -82,7 +82,7 @@ Partial Class FrmMantenimientoCategoria
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(103, 32)
-        Me.Label2.TabIndex = 50
+        Me.Label2.TabIndex = 58
         Me.Label2.Text = "Nombre"
         '
         'BtnGuardar
@@ -95,7 +95,7 @@ Partial Class FrmMantenimientoCategoria
         Me.BtnGuardar.Location = New System.Drawing.Point(541, 298)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(250, 55)
-        Me.BtnGuardar.TabIndex = 49
+        Me.BtnGuardar.TabIndex = 57
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = False
         '
@@ -108,7 +108,7 @@ Partial Class FrmMantenimientoCategoria
         Me.TxtNombre.Location = New System.Drawing.Point(12, 118)
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(343, 32)
-        Me.TxtNombre.TabIndex = 48
+        Me.TxtNombre.TabIndex = 56
         '
         'TxtId
         '
@@ -121,23 +121,23 @@ Partial Class FrmMantenimientoCategoria
         Me.TxtId.Name = "TxtId"
         Me.TxtId.ReadOnly = True
         Me.TxtId.Size = New System.Drawing.Size(343, 32)
-        Me.TxtId.TabIndex = 47
+        Me.TxtId.TabIndex = 55
         '
         'Lbltitle
         '
         Me.Lbltitle.AutoSize = True
         Me.Lbltitle.Font = New System.Drawing.Font("Segoe UI Semibold", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbltitle.Location = New System.Drawing.Point(203, 12)
+        Me.Lbltitle.Location = New System.Drawing.Point(230, 12)
         Me.Lbltitle.Name = "Lbltitle"
-        Me.Lbltitle.Size = New System.Drawing.Size(395, 45)
-        Me.Lbltitle.TabIndex = 46
-        Me.Lbltitle.Text = "Mantenimiento Categoria"
+        Me.Lbltitle.Size = New System.Drawing.Size(341, 45)
+        Me.Lbltitle.TabIndex = 54
+        Me.Lbltitle.Text = "Mantenimiento Cargo"
         '
         'ErrorProvider
         '
         Me.ErrorProvider.ContainerControl = Me
         '
-        'FrmMantenimientoCategoria
+        'FrmMantenimientoCargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -152,9 +152,9 @@ Partial Class FrmMantenimientoCategoria
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.Lbltitle)
         Me.MaximizeBox = False
-        Me.Name = "FrmMantenimientoCategoria"
+        Me.Name = "FrmMantenimientoCargo"
         Me.ShowIcon = False
-        Me.Text = "Mantenimiento Categoria"
+        Me.Text = "Mantenimiento Cargo"
         CType(Me.ErrorProvider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
