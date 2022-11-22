@@ -99,4 +99,17 @@ Public Class FrmBuscarClientes
     Private Sub BtnActualizar_Click(sender As Object, e As EventArgs) Handles BtnActualizar.Click
         UpdateCliente()
     End Sub
+
+    Private Sub DgvClientes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvClientes.CellDoubleClick
+        If e.RowIndex = -1 Then
+            Return
+        End If
+
+        _idcliente = DgvClientes.CurrentRow.Cells(0).Value
+
+        DialogResult = DialogResult.OK
+
+        Close()
+    End Sub
+
 End Class

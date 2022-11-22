@@ -136,4 +136,9 @@ Public Class FrmDashBoard
         ActivateButton(sender)
         OpenChildForm(New FrmBuscarProveedores)
     End Sub
+
+    Private Sub BtnVentas_Click(sender As Object, e As EventArgs) Handles BtnVentas.Click
+        ActivateButton(sender)
+        OpenChildForm(New FrmVenta)
+    End Sub
 End Class

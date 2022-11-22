@@ -118,4 +118,16 @@ Public Class FrmBuscarArticulos
         DeleteArticulo()
     End Sub
 
+    Private Sub DgvArticulos_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvArticulos.CellDoubleClick
+        If e.RowIndex = -1 Then
+            Return
+        End If
+
+        _idarticulo = DgvArticulos.CurrentRow.Cells(0).Value
+
+        DialogResult = DialogResult.OK
+
+        Close()
+    End Sub
+
 End Class
