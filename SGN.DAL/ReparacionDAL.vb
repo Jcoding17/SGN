@@ -50,7 +50,7 @@ Public Class ReparacionDAL
 
             conex.Open()
 
-            Using cmd As New SqlCommand("GetByIdreparacion", conex)
+            Using cmd As New SqlCommand("GetByIdReparaciones", conex)
                 cmd.CommandType = CommandType.StoredProcedure
                 cmd.Parameters.AddWithValue("@id", id)
 

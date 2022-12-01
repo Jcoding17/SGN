@@ -45,6 +45,8 @@ Partial Class FrmBuscarEmpleados
         '
         'TxtBuscar
         '
+        Me.TxtBuscar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtBuscar.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtBuscar.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -56,6 +58,7 @@ Partial Class FrmBuscarEmpleados
         '
         'BtnBorrar
         '
+        Me.BtnBorrar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BtnBorrar.BackColor = System.Drawing.Color.Transparent
         Me.BtnBorrar.FlatAppearance.BorderSize = 0
         Me.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -75,6 +78,7 @@ Partial Class FrmBuscarEmpleados
         '
         'BtnNuevo
         '
+        Me.BtnNuevo.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -94,6 +98,7 @@ Partial Class FrmBuscarEmpleados
         '
         'BtnBuscar
         '
+        Me.BtnBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
         Me.BtnBuscar.Enabled = False
         Me.BtnBuscar.FlatAppearance.BorderSize = 0
@@ -123,6 +128,9 @@ Partial Class FrmBuscarEmpleados
         '
         Me.DgvEmpleados.AllowUserToAddRows = False
         Me.DgvEmpleados.AllowUserToDeleteRows = False
+        Me.DgvEmpleados.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvEmpleados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Apellido, Me.Edad, Me.IDDoc, Me.NoDoc, Me.Telefono, Me.Email, Me.Direccion, Me.IDCargo})
         Me.DgvEmpleados.Location = New System.Drawing.Point(24, 92)
@@ -225,6 +233,7 @@ Partial Class FrmBuscarEmpleados
         '
         'BtnActualizar
         '
+        Me.BtnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BtnActualizar.BackColor = System.Drawing.Color.White
         Me.BtnActualizar.FlatAppearance.BorderSize = 0
         Me.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat

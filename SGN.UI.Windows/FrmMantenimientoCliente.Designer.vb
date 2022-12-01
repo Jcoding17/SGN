@@ -309,6 +309,7 @@ Partial Class FrmMantenimientoCliente
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.CboxIdDoc)
         Me.Controls.Add(Me.Lbltitle)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "FrmMantenimientoCliente"
         Me.ShowIcon = False

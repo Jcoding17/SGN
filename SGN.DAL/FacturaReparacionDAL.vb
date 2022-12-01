@@ -19,20 +19,22 @@ Public Class FacturaReparacionDAL
                     cmd.Parameters.AddWithValue("@idempleado", factura.IdEmpleado)
                     cmd.Parameters.AddWithValue("@idreparacion", factura.IdReparacion)
                     cmd.Parameters.AddWithValue("@date", factura.Fecha)
-                    cmd.Parameters.AddWithValue("@toldiscount", factura.TotalDescuento)
                     cmd.Parameters.AddWithValue("@tolsub", factura.TotalSubTotal)
+                    cmd.Parameters.AddWithValue("@toldiscount", factura.TotalDescuento)
+                    cmd.Parameters.AddWithValue("@toltotal", factura.Total)
                     factura.Id = Convert.ToInt32(cmd.ExecuteScalar())
 
                     Using cmddv As New SqlCommand("AddDetallesReparaciones", conex)
-                        cmd.CommandType = CommandType.StoredProcedure
+                        cmddv.CommandType = CommandType.StoredProcedure
 
                         For Each detalle In factura.Detalles
 
                             cmddv.Parameters.Clear()
 
                             cmddv.Parameters.AddWithValue("@idfacturareparacion", factura.Id)
-                            cmddv.Parameters.AddWithValue("@idarticulo", detalle.Articulo)
+                            cmddv.Parameters.AddWithValue("@articulo", detalle.Articulo)
                             cmddv.Parameters.AddWithValue("@cant", detalle.Cantidad)
+                            cmddv.Parameters.AddWithValue("@description", detalle.Descripcion)
                             cmddv.Parameters.AddWithValue("@price", detalle.Precio)
                             cmddv.Parameters.AddWithValue("@discount", detalle.Descuento)
                             cmddv.Parameters.AddWithValue("@subtotal", detalle.SubTotal)
@@ -119,7 +121,7 @@ Public Class FacturaReparacionDAL
         Dim objfactura As New FacturaReparacionEntity With {
             .Id = Convert.ToInt32(reader(0)),
             .IdCliente = Convert.ToInt32(reader(1)),
-            .Fecha = Convert.ToDateTime(reader(4))
+        .Fecha = Convert.ToDateTime(reader(4))
         }
 
         Return objfactura

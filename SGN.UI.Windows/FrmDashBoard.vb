@@ -14,7 +14,7 @@ Public Class FrmDashBoard
 
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
         leftBorderBtn = New Panel()
-        leftBorderBtn.Size = New Size(5, 45)
+        leftBorderBtn.Size = New Size(5, 40)
         PanelMenu.Controls.Add(leftBorderBtn)
         'Form'
         Me.Text = String.Empty
@@ -65,17 +65,50 @@ Public Class FrmDashBoard
 
     Private Sub Collapsemenu()
 
+        If Me.PanelMenu.Width > 200 Then
+            PanelMenu.Width = 100
+            PboxLogo.Visible = False
+            BtnTogleMenu.Dock = DockStyle.Top
+
+            For Each menubutton As Button In PanelMenu.Controls.OfType(Of Button)()
+                menubutton.Text = ""
+                menubutton.ImageAlign = ContentAlignment.MiddleCenter
+                menubutton.Padding = New Padding(0)
+            Next
+
+            hideSubmenu()
+        Else
+            PanelMenu.Width = 315
+            PboxLogo.Visible = True
+            BtnTogleMenu.Dock = DockStyle.None
+
+            For Each menubutton As Button In PanelMenu.Controls.OfType(Of Button)()
+                menubutton.Text = "  " + menubutton.Tag.ToString()
+                menubutton.ImageAlign = ContentAlignment.MiddleLeft
+                menubutton.Padding = New Padding(10, 0, 0, 0)
+            Next
+
+        End If
+
+    End Sub
+
+    Private Sub showSubmenu(submenu As Panel)
+        If submenu.Visible = False Then
+            hideSubmenu()
+            submenu.Visible = True
+        Else
+            submenu.Visible = False
+        End If
+    End Sub
+
+    Private Sub hideSubmenu()
+        PanelSubMenuVentas.Visible = False
+        PanelSubMenuCompras.Visible = False
     End Sub
 
     Private Sub FrmDashBoard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LblUser.Text = ActiveUser.Nombre
-    End Sub
-
-    Private Sub LblLogo_Click(sender As Object, e As EventArgs) Handles LblLogo.Click
-        If currentChildForm IsNot Nothing Then
-            currentChildForm.Close()
-        End If
-        Reset()
+        LblUser.Text = ActiveUser.Nombre & " " & ActiveUser.Apellido
+        Collapsemenu()
     End Sub
 
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
@@ -110,11 +143,6 @@ Public Class FrmDashBoard
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub BtnClientes_Click(sender As Object, e As EventArgs) Handles BtnClientes.Click
-        ActivateButton(sender)
-        OpenChildForm(New FrmBuscarClientes)
-    End Sub
-
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
         LblFecha.Text = Date.Today.ToLongDateString()
         LblHora.Text = Date.Now.ToLongTimeString()
@@ -127,18 +155,79 @@ Public Class FrmDashBoard
         End If
     End Sub
 
+    Private Sub BtnTogleMenu_Click(sender As Object, e As EventArgs) Handles BtnTogleMenu.Click
+        Collapsemenu()
+    End Sub
+
+    Private Sub BtnDashBoard_Click(sender As Object, e As EventArgs) Handles BtnDashBoard.Click
+
+    End Sub
+
+    Private Sub BtnClintes_Click(sender As Object, e As EventArgs) Handles BtnClintes.Click
+        hideSubmenu()
+        ActivateButton(sender)
+        OpenChildForm(New FrmBuscarClientes)
+    End Sub
+
     Private Sub BtnEmpleados_Click(sender As Object, e As EventArgs) Handles BtnEmpleados.Click
+        hideSubmenu()
         ActivateButton(sender)
         OpenChildForm(New FrmBuscarEmpleados)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub BtnArticulos_Click(sender As Object, e As EventArgs) Handles BtnArticulos.Click
+        hideSubmenu()
         ActivateButton(sender)
-        OpenChildForm(New FrmBuscarProveedores)
+        OpenChildForm(New FrmBuscarArticulos)
     End Sub
 
     Private Sub BtnVentas_Click(sender As Object, e As EventArgs) Handles BtnVentas.Click
+        showSubmenu(PanelSubMenuVentas)
         ActivateButton(sender)
+    End Sub
+
+    Private Sub BtnVender_Click(sender As Object, e As EventArgs) Handles BtnVender.Click
+        'ActivateButton(sender)
         OpenChildForm(New FrmVenta)
     End Sub
+
+    Private Sub BtnCotizar_Click(sender As Object, e As EventArgs) Handles BtnCotizar.Click
+        'ActivateButton(sender)
+        OpenChildForm(New FrmCotizacion)
+    End Sub
+
+    Private Sub BtnCompras_Click(sender As Object, e As EventArgs) Handles BtnCompras.Click
+        showSubmenu(PanelSubMenuCompras)
+        ActivateButton(sender)
+    End Sub
+
+    Private Sub BtnComprar_Click(sender As Object, e As EventArgs) Handles BtnComprar.Click
+        'ActivateButton(sender)
+        OpenChildForm(New FrmCompra)
+    End Sub
+
+    Private Sub BtnProveedores_Click(sender As Object, e As EventArgs) Handles BtnProveedores.Click
+        'ActivateButton(sender)
+        OpenChildForm(New FrmBuscarProveedores)
+    End Sub
+
+    Private Sub PboxLogo_Click(sender As Object, e As EventArgs) Handles PboxLogo.Click
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+        Reset()
+    End Sub
+
+    Private Sub BtnReportesDeVentas_Click(sender As Object, e As EventArgs) Handles BtnReportesDeVentas.Click
+        hideSubmenu()
+        ActivateButton(sender)
+        OpenChildForm(New FrmTop10ArticulosReporte)
+    End Sub
+
+    Private Sub BtnReparaciones_Click(sender As Object, e As EventArgs) Handles BtnReparaciones.Click
+        hideSubmenu()
+        ActivateButton(sender)
+        OpenChildForm(New FrmReparaciones)
+    End Sub
+
 End Class

@@ -46,6 +46,7 @@ Partial Class FrmBuscarArticulos
         '
         'BtnActualizar
         '
+        Me.BtnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BtnActualizar.BackColor = System.Drawing.Color.Transparent
         Me.BtnActualizar.FlatAppearance.BorderSize = 0
         Me.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -65,6 +66,8 @@ Partial Class FrmBuscarArticulos
         '
         'TxtBuscar
         '
+        Me.TxtBuscar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtBuscar.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtBuscar.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -76,6 +79,7 @@ Partial Class FrmBuscarArticulos
         '
         'BtnBorrar
         '
+        Me.BtnBorrar.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BtnBorrar.BackColor = System.Drawing.Color.Transparent
         Me.BtnBorrar.FlatAppearance.BorderSize = 0
         Me.BtnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -95,6 +99,7 @@ Partial Class FrmBuscarArticulos
         '
         'BtnNuevo
         '
+        Me.BtnNuevo.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.BtnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -114,6 +119,7 @@ Partial Class FrmBuscarArticulos
         '
         'BtnBuscar
         '
+        Me.BtnBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnBuscar.BackColor = System.Drawing.Color.Transparent
         Me.BtnBuscar.Enabled = False
         Me.BtnBuscar.FlatAppearance.BorderSize = 0
@@ -143,6 +149,9 @@ Partial Class FrmBuscarArticulos
         '
         Me.DgvArticulos.AllowUserToAddRows = False
         Me.DgvArticulos.AllowUserToDeleteRows = False
+        Me.DgvArticulos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvArticulos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.IDMarca, Me.IDCategoria, Me.Descripcion, Me.PrecioCompra, Me.PrecioVenta, Me.Stock})
         Me.DgvArticulos.Location = New System.Drawing.Point(24, 92)

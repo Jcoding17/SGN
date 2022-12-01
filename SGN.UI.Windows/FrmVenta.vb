@@ -6,6 +6,7 @@ Public Class FrmVenta
     Dim oVenta As VentaEntity
 
     Private Sub BtnBuscarCliente_Click(sender As Object, e As EventArgs) Handles BtnBuscarCliente.Click
+
         Dim frm As New FrmBuscarClientes
 
         frm.BtnNuevo.Enabled = False
@@ -16,7 +17,7 @@ Public Class FrmVenta
         frm.BtnBorrar.Visible = False
 
         If frm.ShowDialog() = DialogResult.OK Then
-            Dim oCliente As ClienteEntity = ClienteBLL.GetById(frm.IdCliente)
+            Dim oCliente As ClienteEntity = ClienteBLL.GetById(frm.Idcliente)
 
             TxtCodigoCliente.Text = oCliente.Id
             TxtCliente.Text = oCliente.Nombre & " " & oCliente.Apellido
@@ -32,6 +33,7 @@ Public Class FrmVenta
     End Sub
 
     Private Sub BtnBuscarArticulo_Click(sender As Object, e As EventArgs) Handles BtnBuscarArticulo.Click
+
         Dim frm As New FrmBuscarArticulos
 
         frm.BtnNuevo.Enabled = False
@@ -42,7 +44,7 @@ Public Class FrmVenta
         frm.BtnBorrar.Visible = False
 
         If frm.ShowDialog() = DialogResult.OK Then
-            Dim oArticulo As ArticuloEntity = ArticuloBLL.GetById(frm.IdArticulo)
+            Dim oArticulo As ArticuloEntity = ArticuloBLL.GetById(frm.Idarticulo)
 
             TxtCodigoArticulo.Text = oArticulo.Id
             TxtArticulo.Text = oArticulo.Nombre
@@ -77,6 +79,7 @@ Public Class FrmVenta
         TxtTotal.Text = oVenta.Total.ToString("C")
 
         InicializarControlesDetalle()
+
     End Sub
 
     Private Sub InicializarControlesDetalle()

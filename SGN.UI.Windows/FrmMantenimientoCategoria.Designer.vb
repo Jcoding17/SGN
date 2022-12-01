@@ -151,6 +151,7 @@ Partial Class FrmMantenimientoCategoria
         Me.Controls.Add(Me.TxtNombre)
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.Lbltitle)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "FrmMantenimientoCategoria"
         Me.ShowIcon = False

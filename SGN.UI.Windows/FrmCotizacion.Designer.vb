@@ -23,12 +23,12 @@ Partial Class FrmCotizacion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DgvArticulos = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Articulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -63,7 +63,7 @@ Partial Class FrmCotizacion
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.DtpFecha = New System.Windows.Forms.DateTimePicker()
-        Me.TxtCodigoVenta = New System.Windows.Forms.TextBox()
+        Me.TxtCodigoCotizacion = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -110,8 +110,8 @@ Partial Class FrmCotizacion
         '
         'ID
         '
-        DataGridViewCellStyle1.Format = "N0"
-        Me.ID.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle25.Format = "N0"
+        Me.ID.DefaultCellStyle = DataGridViewCellStyle25
         Me.ID.HeaderText = "ID"
         Me.ID.MinimumWidth = 8
         Me.ID.Name = "ID"
@@ -129,9 +129,9 @@ Partial Class FrmCotizacion
         '
         'Cantidad
         '
-        DataGridViewCellStyle2.Format = "N0"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle26.Format = "N0"
+        DataGridViewCellStyle26.NullValue = Nothing
+        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle26
         Me.Cantidad.HeaderText = "Cantidad"
         Me.Cantidad.MinimumWidth = 8
         Me.Cantidad.Name = "Cantidad"
@@ -140,9 +140,9 @@ Partial Class FrmCotizacion
         '
         'Precio
         '
-        DataGridViewCellStyle3.Format = "N2"
-        DataGridViewCellStyle3.NullValue = Nothing
-        Me.Precio.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle27.Format = "N2"
+        DataGridViewCellStyle27.NullValue = Nothing
+        Me.Precio.DefaultCellStyle = DataGridViewCellStyle27
         Me.Precio.HeaderText = "Precio"
         Me.Precio.MinimumWidth = 8
         Me.Precio.Name = "Precio"
@@ -151,9 +151,9 @@ Partial Class FrmCotizacion
         '
         'Subtotal
         '
-        DataGridViewCellStyle4.Format = "N2"
-        DataGridViewCellStyle4.NullValue = Nothing
-        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle28.Format = "N2"
+        DataGridViewCellStyle28.NullValue = Nothing
+        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle28
         Me.Subtotal.HeaderText = "Sub Total"
         Me.Subtotal.MinimumWidth = 8
         Me.Subtotal.Name = "Subtotal"
@@ -162,9 +162,9 @@ Partial Class FrmCotizacion
         '
         'Descuento
         '
-        DataGridViewCellStyle5.Format = "N2"
-        DataGridViewCellStyle5.NullValue = Nothing
-        Me.Descuento.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle29.Format = "N2"
+        DataGridViewCellStyle29.NullValue = Nothing
+        Me.Descuento.DefaultCellStyle = DataGridViewCellStyle29
         Me.Descuento.HeaderText = "Descuento"
         Me.Descuento.MinimumWidth = 8
         Me.Descuento.Name = "Descuento"
@@ -173,9 +173,9 @@ Partial Class FrmCotizacion
         '
         'Impuesto
         '
-        DataGridViewCellStyle6.Format = "N2"
-        DataGridViewCellStyle6.NullValue = Nothing
-        Me.Impuesto.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle30.Format = "N2"
+        DataGridViewCellStyle30.NullValue = Nothing
+        Me.Impuesto.DefaultCellStyle = DataGridViewCellStyle30
         Me.Impuesto.HeaderText = "Impuesto"
         Me.Impuesto.MinimumWidth = 8
         Me.Impuesto.Name = "Impuesto"
@@ -334,7 +334,7 @@ Partial Class FrmCotizacion
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.DtpFecha)
-        Me.GroupBox2.Controls.Add(Me.TxtCodigoVenta)
+        Me.GroupBox2.Controls.Add(Me.TxtCodigoCotizacion)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Location = New System.Drawing.Point(570, 13)
@@ -465,14 +465,14 @@ Partial Class FrmCotizacion
         Me.DtpFecha.Size = New System.Drawing.Size(154, 26)
         Me.DtpFecha.TabIndex = 4
         '
-        'TxtCodigoVenta
+        'TxtCodigoCotizacion
         '
-        Me.TxtCodigoVenta.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtCodigoVenta.Location = New System.Drawing.Point(119, 35)
-        Me.TxtCodigoVenta.Name = "TxtCodigoVenta"
-        Me.TxtCodigoVenta.ReadOnly = True
-        Me.TxtCodigoVenta.Size = New System.Drawing.Size(154, 34)
-        Me.TxtCodigoVenta.TabIndex = 1
+        Me.TxtCodigoCotizacion.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtCodigoCotizacion.Location = New System.Drawing.Point(119, 35)
+        Me.TxtCodigoCotizacion.Name = "TxtCodigoCotizacion"
+        Me.TxtCodigoCotizacion.ReadOnly = True
+        Me.TxtCodigoCotizacion.Size = New System.Drawing.Size(154, 34)
+        Me.TxtCodigoCotizacion.TabIndex = 1
         '
         'Label4
         '
@@ -775,7 +775,7 @@ Partial Class FrmCotizacion
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents DtpFecha As DateTimePicker
-    Friend WithEvents TxtCodigoVenta As TextBox
+    Friend WithEvents TxtCodigoCotizacion As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents GroupBox1 As GroupBox
