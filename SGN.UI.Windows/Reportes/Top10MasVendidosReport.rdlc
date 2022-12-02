@@ -303,7 +303,7 @@
         <Top>0.96944cm</Top>
         <Left>0.89912cm</Left>
         <Height>1.2cm</Height>
-        <Width>16.42211cm</Width>
+        <Width>16.42212cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -378,7 +378,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>25/11/2022</Value>
+                  <Value>=First(Fields!fecha.Value, "Top10Articulos")</Value>
                   <Style>
                     <Format>D</Format>
                   </Style>
@@ -454,10 +454,14 @@
           <DataField>vendidos</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="fecha">
+          <DataField>fecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>Top10Articulos</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Adm\Documents\Proyectos\SistemaGestionNegociosBelloCenter\SGN.UI.Windows\Top10Articulos.xsd</rd:SchemaPath>
+        <rd:DataSetName>BelloCenterDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Adm\Documents\Proyectos\SistemaGestionNegociosBelloCenter\SGN.UI.Windows\BelloCenterDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>Top10Articulos</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

@@ -23,12 +23,12 @@ Partial Class FrmCompra
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DgvArticulos = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Articulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -98,9 +98,6 @@ Partial Class FrmCompra
         '
         Me.DgvArticulos.AllowUserToAddRows = False
         Me.DgvArticulos.AllowUserToDeleteRows = False
-        Me.DgvArticulos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvArticulos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Articulo, Me.Cantidad, Me.Precio, Me.Subtotal, Me.Descuento, Me.Impuesto})
         Me.DgvArticulos.Location = New System.Drawing.Point(11, 473)
@@ -113,8 +110,8 @@ Partial Class FrmCompra
         '
         'ID
         '
-        DataGridViewCellStyle7.Format = "N0"
-        Me.ID.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.Format = "N0"
+        Me.ID.DefaultCellStyle = DataGridViewCellStyle1
         Me.ID.HeaderText = "ID"
         Me.ID.MinimumWidth = 8
         Me.ID.Name = "ID"
@@ -132,9 +129,9 @@ Partial Class FrmCompra
         '
         'Cantidad
         '
-        DataGridViewCellStyle8.Format = "N0"
-        DataGridViewCellStyle8.NullValue = Nothing
-        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Format = "N0"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle2
         Me.Cantidad.HeaderText = "Cantidad"
         Me.Cantidad.MinimumWidth = 8
         Me.Cantidad.Name = "Cantidad"
@@ -143,9 +140,9 @@ Partial Class FrmCompra
         '
         'Precio
         '
-        DataGridViewCellStyle9.Format = "N2"
-        DataGridViewCellStyle9.NullValue = Nothing
-        Me.Precio.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.Format = "N2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.Precio.DefaultCellStyle = DataGridViewCellStyle3
         Me.Precio.HeaderText = "Precio"
         Me.Precio.MinimumWidth = 8
         Me.Precio.Name = "Precio"
@@ -154,9 +151,9 @@ Partial Class FrmCompra
         '
         'Subtotal
         '
-        DataGridViewCellStyle10.Format = "N2"
-        DataGridViewCellStyle10.NullValue = Nothing
-        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.Format = "N2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle4
         Me.Subtotal.HeaderText = "Sub Total"
         Me.Subtotal.MinimumWidth = 8
         Me.Subtotal.Name = "Subtotal"
@@ -165,9 +162,9 @@ Partial Class FrmCompra
         '
         'Descuento
         '
-        DataGridViewCellStyle11.Format = "N2"
-        DataGridViewCellStyle11.NullValue = Nothing
-        Me.Descuento.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Format = "N2"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.Descuento.DefaultCellStyle = DataGridViewCellStyle5
         Me.Descuento.HeaderText = "Descuento"
         Me.Descuento.MinimumWidth = 8
         Me.Descuento.Name = "Descuento"
@@ -176,9 +173,9 @@ Partial Class FrmCompra
         '
         'Impuesto
         '
-        DataGridViewCellStyle12.Format = "N2"
-        DataGridViewCellStyle12.NullValue = Nothing
-        Me.Impuesto.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.Format = "N2"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.Impuesto.DefaultCellStyle = DataGridViewCellStyle6
         Me.Impuesto.HeaderText = "Impuesto"
         Me.Impuesto.MinimumWidth = 8
         Me.Impuesto.Name = "Impuesto"
@@ -187,7 +184,6 @@ Partial Class FrmCompra
         '
         'GroupBox3
         '
-        Me.GroupBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.Controls.Add(Me.BtnAgregar)
         Me.GroupBox3.Controls.Add(Me.BtnBuscarArticulo)
         Me.GroupBox3.Controls.Add(Me.TxtDescuentoArticulo)
@@ -216,7 +212,7 @@ Partial Class FrmCompra
         Me.BtnAgregar.ForeColor = System.Drawing.Color.White
         Me.BtnAgregar.Location = New System.Drawing.Point(862, 26)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(93, 66)
+        Me.BtnAgregar.Size = New System.Drawing.Size(110, 66)
         Me.BtnAgregar.TabIndex = 9
         Me.BtnAgregar.Text = "Agregar"
         Me.BtnAgregar.UseVisualStyleBackColor = False
@@ -230,7 +226,7 @@ Partial Class FrmCompra
         Me.BtnBuscarArticulo.ForeColor = System.Drawing.Color.White
         Me.BtnBuscarArticulo.Location = New System.Drawing.Point(738, 26)
         Me.BtnBuscarArticulo.Name = "BtnBuscarArticulo"
-        Me.BtnBuscarArticulo.Size = New System.Drawing.Size(93, 66)
+        Me.BtnBuscarArticulo.Size = New System.Drawing.Size(110, 66)
         Me.BtnBuscarArticulo.TabIndex = 7
         Me.BtnBuscarArticulo.Text = "Buscar"
         Me.BtnBuscarArticulo.UseVisualStyleBackColor = False
@@ -330,7 +326,6 @@ Partial Class FrmCompra
         '
         'GroupBox2
         '
-        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.CboxPlazo)
         Me.GroupBox2.Controls.Add(Me.CboxCondicion)
         Me.GroupBox2.Controls.Add(Me.GroupBox4)
@@ -373,8 +368,6 @@ Partial Class FrmCompra
         '
         'GroupBox4
         '
-        Me.GroupBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox4.Controls.Add(Me.TxtEncargado)
         Me.GroupBox4.Controls.Add(Me.Label11)
         Me.GroupBox4.Controls.Add(Me.Label12)
@@ -503,8 +496,6 @@ Partial Class FrmCompra
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.BtnBuscarProveedor)
         Me.GroupBox1.Controls.Add(Me.TxtProveedor)
         Me.GroupBox1.Controls.Add(Me.TxtDocumento)
@@ -514,7 +505,7 @@ Partial Class FrmCompra
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Location = New System.Drawing.Point(11, 10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(525, 208)
+        Me.GroupBox1.Size = New System.Drawing.Size(541, 208)
         Me.GroupBox1.TabIndex = 14
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del Proveedor"
@@ -526,9 +517,9 @@ Partial Class FrmCompra
         Me.BtnBuscarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscarProveedor.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBuscarProveedor.ForeColor = System.Drawing.Color.White
-        Me.BtnBuscarProveedor.Location = New System.Drawing.Point(420, 69)
+        Me.BtnBuscarProveedor.Location = New System.Drawing.Point(421, 69)
         Me.BtnBuscarProveedor.Name = "BtnBuscarProveedor"
-        Me.BtnBuscarProveedor.Size = New System.Drawing.Size(93, 66)
+        Me.BtnBuscarProveedor.Size = New System.Drawing.Size(110, 65)
         Me.BtnBuscarProveedor.TabIndex = 6
         Me.BtnBuscarProveedor.Text = "Buscar"
         Me.BtnBuscarProveedor.UseVisualStyleBackColor = False
@@ -592,7 +583,6 @@ Partial Class FrmCompra
         '
         'BtnNuevo
         '
-        Me.BtnNuevo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.BtnNuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(154, Byte), Integer))
         Me.BtnNuevo.FlatAppearance.BorderSize = 0
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -600,44 +590,41 @@ Partial Class FrmCompra
         Me.BtnNuevo.ForeColor = System.Drawing.Color.White
         Me.BtnNuevo.Location = New System.Drawing.Point(11, 766)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(100, 66)
+        Me.BtnNuevo.Size = New System.Drawing.Size(110, 65)
         Me.BtnNuevo.TabIndex = 42
         Me.BtnNuevo.Text = "Nuevo"
         Me.BtnNuevo.UseVisualStyleBackColor = False
         '
         'BtnGuardar
         '
-        Me.BtnGuardar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.BtnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(154, Byte), Integer))
         Me.BtnGuardar.FlatAppearance.BorderSize = 0
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(118, 766)
+        Me.BtnGuardar.Location = New System.Drawing.Point(125, 766)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(100, 66)
+        Me.BtnGuardar.Size = New System.Drawing.Size(110, 65)
         Me.BtnGuardar.TabIndex = 41
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = False
         '
         'BtnCancelar
         '
-        Me.BtnCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(154, Byte), Integer))
         Me.BtnCancelar.FlatAppearance.BorderSize = 0
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(225, 766)
+        Me.BtnCancelar.Location = New System.Drawing.Point(239, 766)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(100, 66)
+        Me.BtnCancelar.Size = New System.Drawing.Size(110, 65)
         Me.BtnCancelar.TabIndex = 40
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
         '
         'TxtTotal
         '
-        Me.TxtTotal.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtTotal.Location = New System.Drawing.Point(1214, 798)
         Me.TxtTotal.Name = "TxtTotal"
@@ -647,7 +634,6 @@ Partial Class FrmCompra
         '
         'Label16
         '
-        Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.Location = New System.Drawing.Point(1213, 766)
@@ -658,7 +644,6 @@ Partial Class FrmCompra
         '
         'TxtImpuesto
         '
-        Me.TxtImpuesto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtImpuesto.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtImpuesto.Location = New System.Drawing.Point(1102, 798)
         Me.TxtImpuesto.Name = "TxtImpuesto"
@@ -668,7 +653,6 @@ Partial Class FrmCompra
         '
         'Label17
         '
-        Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(1104, 766)
@@ -679,7 +663,6 @@ Partial Class FrmCompra
         '
         'TxtDescuento
         '
-        Me.TxtDescuento.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtDescuento.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtDescuento.Location = New System.Drawing.Point(990, 798)
         Me.TxtDescuento.Name = "TxtDescuento"
@@ -689,7 +672,6 @@ Partial Class FrmCompra
         '
         'Label18
         '
-        Me.Label18.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.Location = New System.Drawing.Point(985, 766)
@@ -700,7 +682,6 @@ Partial Class FrmCompra
         '
         'TxtSubTotal
         '
-        Me.TxtSubTotal.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtSubTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtSubTotal.Location = New System.Drawing.Point(878, 798)
         Me.TxtSubTotal.Name = "TxtSubTotal"
@@ -710,7 +691,6 @@ Partial Class FrmCompra
         '
         'Label19
         '
-        Me.Label19.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.Location = New System.Drawing.Point(878, 766)

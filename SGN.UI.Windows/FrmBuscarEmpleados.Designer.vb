@@ -65,10 +65,10 @@ Partial Class FrmBuscarEmpleados
         Me.BtnBorrar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBorrar.Image = CType(resources.GetObject("BtnBorrar.Image"), System.Drawing.Image)
         Me.BtnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnBorrar.Location = New System.Drawing.Point(1010, 345)
+        Me.BtnBorrar.Location = New System.Drawing.Point(997, 342)
         Me.BtnBorrar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnBorrar.Name = "BtnBorrar"
-        Me.BtnBorrar.Size = New System.Drawing.Size(165, 61)
+        Me.BtnBorrar.Size = New System.Drawing.Size(190, 70)
         Me.BtnBorrar.TabIndex = 22
         Me.BtnBorrar.Tag = ""
         Me.BtnBorrar.Text = "  Borrar"
@@ -85,10 +85,10 @@ Partial Class FrmBuscarEmpleados
         Me.BtnNuevo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNuevo.Image = CType(resources.GetObject("BtnNuevo.Image"), System.Drawing.Image)
         Me.BtnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnNuevo.Location = New System.Drawing.Point(1010, 183)
+        Me.BtnNuevo.Location = New System.Drawing.Point(997, 180)
         Me.BtnNuevo.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(165, 61)
+        Me.BtnNuevo.Size = New System.Drawing.Size(190, 70)
         Me.BtnNuevo.TabIndex = 21
         Me.BtnNuevo.Tag = ""
         Me.BtnNuevo.Text = "  Nuevo"
@@ -241,11 +241,13 @@ Partial Class FrmBuscarEmpleados
         Me.BtnActualizar.ForeColor = System.Drawing.Color.Black
         Me.BtnActualizar.Image = Global.SGN.UI.Windows.My.Resources.Resources.cliente32
         Me.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnActualizar.Location = New System.Drawing.Point(1010, 264)
+        Me.BtnActualizar.Location = New System.Drawing.Point(997, 261)
         Me.BtnActualizar.Name = "BtnActualizar"
-        Me.BtnActualizar.Size = New System.Drawing.Size(165, 61)
+        Me.BtnActualizar.Size = New System.Drawing.Size(190, 70)
         Me.BtnActualizar.TabIndex = 24
-        Me.BtnActualizar.Text = "    Actualizar"
+        Me.BtnActualizar.Text = "  Actualizar"
+        Me.BtnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.BtnActualizar.UseVisualStyleBackColor = False
         '
         'FrmBuscarEmpleados

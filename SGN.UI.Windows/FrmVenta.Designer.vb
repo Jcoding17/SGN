@@ -23,12 +23,12 @@ Partial Class FrmVenta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DgvArticulos = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Articulo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -110,8 +110,8 @@ Partial Class FrmVenta
         '
         'ID
         '
-        DataGridViewCellStyle13.Format = "N0"
-        Me.ID.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle1.Format = "N0"
+        Me.ID.DefaultCellStyle = DataGridViewCellStyle1
         Me.ID.HeaderText = "ID"
         Me.ID.MinimumWidth = 8
         Me.ID.Name = "ID"
@@ -129,9 +129,9 @@ Partial Class FrmVenta
         '
         'Cantidad
         '
-        DataGridViewCellStyle14.Format = "N0"
-        DataGridViewCellStyle14.NullValue = Nothing
-        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle2.Format = "N0"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle2
         Me.Cantidad.HeaderText = "Cantidad"
         Me.Cantidad.MinimumWidth = 8
         Me.Cantidad.Name = "Cantidad"
@@ -140,9 +140,9 @@ Partial Class FrmVenta
         '
         'Precio
         '
-        DataGridViewCellStyle15.Format = "N2"
-        DataGridViewCellStyle15.NullValue = Nothing
-        Me.Precio.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle3.Format = "N2"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.Precio.DefaultCellStyle = DataGridViewCellStyle3
         Me.Precio.HeaderText = "Precio"
         Me.Precio.MinimumWidth = 8
         Me.Precio.Name = "Precio"
@@ -151,9 +151,9 @@ Partial Class FrmVenta
         '
         'Subtotal
         '
-        DataGridViewCellStyle16.Format = "N2"
-        DataGridViewCellStyle16.NullValue = Nothing
-        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle4.Format = "N2"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.Subtotal.DefaultCellStyle = DataGridViewCellStyle4
         Me.Subtotal.HeaderText = "Sub Total"
         Me.Subtotal.MinimumWidth = 8
         Me.Subtotal.Name = "Subtotal"
@@ -162,9 +162,9 @@ Partial Class FrmVenta
         '
         'Descuento
         '
-        DataGridViewCellStyle17.Format = "N2"
-        DataGridViewCellStyle17.NullValue = Nothing
-        Me.Descuento.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle5.Format = "N2"
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.Descuento.DefaultCellStyle = DataGridViewCellStyle5
         Me.Descuento.HeaderText = "Descuento"
         Me.Descuento.MinimumWidth = 8
         Me.Descuento.Name = "Descuento"
@@ -173,9 +173,9 @@ Partial Class FrmVenta
         '
         'Impuesto
         '
-        DataGridViewCellStyle18.Format = "N2"
-        DataGridViewCellStyle18.NullValue = Nothing
-        Me.Impuesto.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle6.Format = "N2"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.Impuesto.DefaultCellStyle = DataGridViewCellStyle6
         Me.Impuesto.HeaderText = "Impuesto"
         Me.Impuesto.MinimumWidth = 8
         Me.Impuesto.Name = "Impuesto"
@@ -212,7 +212,7 @@ Partial Class FrmVenta
         Me.BtnAgregar.ForeColor = System.Drawing.Color.White
         Me.BtnAgregar.Location = New System.Drawing.Point(862, 26)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(93, 66)
+        Me.BtnAgregar.Size = New System.Drawing.Size(110, 66)
         Me.BtnAgregar.TabIndex = 9
         Me.BtnAgregar.Text = "Agregar"
         Me.BtnAgregar.UseVisualStyleBackColor = False
@@ -226,7 +226,7 @@ Partial Class FrmVenta
         Me.BtnBuscarArticulo.ForeColor = System.Drawing.Color.White
         Me.BtnBuscarArticulo.Location = New System.Drawing.Point(738, 26)
         Me.BtnBuscarArticulo.Name = "BtnBuscarArticulo"
-        Me.BtnBuscarArticulo.Size = New System.Drawing.Size(93, 66)
+        Me.BtnBuscarArticulo.Size = New System.Drawing.Size(110, 66)
         Me.BtnBuscarArticulo.TabIndex = 7
         Me.BtnBuscarArticulo.Text = "Buscar"
         Me.BtnBuscarArticulo.UseVisualStyleBackColor = False
@@ -517,9 +517,9 @@ Partial Class FrmVenta
         Me.BtnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscarCliente.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBuscarCliente.ForeColor = System.Drawing.Color.White
-        Me.BtnBuscarCliente.Location = New System.Drawing.Point(407, 75)
+        Me.BtnBuscarCliente.Location = New System.Drawing.Point(396, 75)
         Me.BtnBuscarCliente.Name = "BtnBuscarCliente"
-        Me.BtnBuscarCliente.Size = New System.Drawing.Size(93, 66)
+        Me.BtnBuscarCliente.Size = New System.Drawing.Size(110, 66)
         Me.BtnBuscarCliente.TabIndex = 6
         Me.BtnBuscarCliente.Text = "Buscar"
         Me.BtnBuscarCliente.UseVisualStyleBackColor = False
@@ -664,9 +664,9 @@ Partial Class FrmVenta
         Me.BtnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNuevo.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNuevo.ForeColor = System.Drawing.Color.White
-        Me.BtnNuevo.Location = New System.Drawing.Point(11, 769)
+        Me.BtnNuevo.Location = New System.Drawing.Point(11, 765)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(100, 66)
+        Me.BtnNuevo.Size = New System.Drawing.Size(110, 66)
         Me.BtnNuevo.TabIndex = 31
         Me.BtnNuevo.Text = "Nuevo"
         Me.BtnNuevo.UseVisualStyleBackColor = False
@@ -678,9 +678,9 @@ Partial Class FrmVenta
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(118, 769)
+        Me.BtnGuardar.Location = New System.Drawing.Point(126, 765)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(100, 66)
+        Me.BtnGuardar.Size = New System.Drawing.Size(110, 66)
         Me.BtnGuardar.TabIndex = 30
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = False
@@ -692,9 +692,9 @@ Partial Class FrmVenta
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(225, 769)
+        Me.BtnCancelar.Location = New System.Drawing.Point(241, 765)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(100, 66)
+        Me.BtnCancelar.Size = New System.Drawing.Size(110, 66)
         Me.BtnCancelar.TabIndex = 29
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False

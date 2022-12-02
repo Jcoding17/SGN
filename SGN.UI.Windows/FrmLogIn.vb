@@ -15,7 +15,7 @@ Public Class FrmLogIn
         Dim validlogin = UsuarioBLL.Login(TxtUser.Text, TxtPass.Text)
 
         If validlogin = True Then
-            Dim frm As New FrmDashBoard()
+            Dim frm As New FrmPrincipal()
             frm.Show()
             AddHandler frm.FormClosed, AddressOf Me.Logout
             Hide()

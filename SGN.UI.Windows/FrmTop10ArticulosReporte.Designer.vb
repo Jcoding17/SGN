@@ -24,13 +24,23 @@ Partial Class FrmTop10ArticulosReporte
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.Top10Articulos = New SGN.UI.Windows.Top10Articulos()
         Me.Top10ArticulosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Top10Articulos = New SGN.UI.Windows.Top10Articulos()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Top10ArticulosTableAdapter = New SGN.UI.Windows.Top10ArticulosTableAdapters.Top10ArticulosTableAdapter()
-        CType(Me.Top10Articulos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Top10ArticulosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Top10Articulos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Top10ArticulosBindingSource
+        '
+        Me.Top10ArticulosBindingSource.DataMember = "Top10Articulos"
+        Me.Top10ArticulosBindingSource.DataSource = Me.Top10Articulos
+        '
+        'Top10Articulos
+        '
+        Me.Top10Articulos.DataSetName = "Top10Articulos"
+        Me.Top10Articulos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ReportViewer1
         '
@@ -41,19 +51,10 @@ Partial Class FrmTop10ArticulosReporte
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SGN.UI.Windows.Top10MasVendidosReport.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Padding = New System.Windows.Forms.Padding(10)
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
         Me.ReportViewer1.Size = New System.Drawing.Size(929, 664)
         Me.ReportViewer1.TabIndex = 0
-        '
-        'Top10Articulos
-        '
-        Me.Top10Articulos.DataSetName = "Top10Articulos"
-        Me.Top10Articulos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Top10ArticulosBindingSource
-        '
-        Me.Top10ArticulosBindingSource.DataMember = "Top10Articulos"
-        Me.Top10ArticulosBindingSource.DataSource = Me.Top10Articulos
         '
         'Top10ArticulosTableAdapter
         '
@@ -67,8 +68,8 @@ Partial Class FrmTop10ArticulosReporte
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "FrmTop10ArticulosReporte"
         Me.Text = "Top 10 ArticulosReporte"
-        CType(Me.Top10Articulos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Top10ArticulosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Top10Articulos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

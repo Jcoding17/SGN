@@ -106,7 +106,11 @@ Public Class FrmReparaciones
 
         Dim frm As New FrmReparaciones
 
-        frm.TabCobrar.Visible = False
+        frm.ReparacionesTabs.TabPages.RemoveAt(1)
+        frm.BtnNueva.Enabled = False
+        frm.BtnNueva.Visible = False
+        frm.BtnReparado.Enabled = False
+        frm.BtnReparado.Visible = False
 
         If frm.ShowDialog() = DialogResult.OK Then
             Dim oReparacion As ReparacionEntity = ReparacionBLL.GetById(frm.Idreparacion)
@@ -118,7 +122,6 @@ Public Class FrmReparaciones
     End Sub
 
     Private Sub InicializarControlesDetalle()
-        TxtCodigoDetReparacion.Text = ""
         TxtArticulo.Text = ""
         TxtCantidad.Text = 0
         TxtDescripcion.Text = ""
@@ -160,7 +163,7 @@ Public Class FrmReparaciones
         TxtSubTotal.Text = 0.ToString("C")
         TxtDescuento.Text = 0.ToString("C")
         TxtTotal.Text = 0.ToString("C")
-
+        TxtCodigoDetReparacion.Text = 0
         DgvReparaciones.AutoGenerateColumns = False
         DgvReparaciones.DataSource = Nothing
 

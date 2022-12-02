@@ -148,10 +148,10 @@ Partial Class FrmReparaciones
         Me.BtnReparado.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnReparado.Image = CType(resources.GetObject("BtnReparado.Image"), System.Drawing.Image)
         Me.BtnReparado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnReparado.Location = New System.Drawing.Point(1008, 343)
+        Me.BtnReparado.Location = New System.Drawing.Point(1099, 379)
         Me.BtnReparado.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnReparado.Name = "BtnReparado"
-        Me.BtnReparado.Size = New System.Drawing.Size(165, 61)
+        Me.BtnReparado.Size = New System.Drawing.Size(190, 70)
         Me.BtnReparado.TabIndex = 42
         Me.BtnReparado.Tag = ""
         Me.BtnReparado.Text = "  Reparado"
@@ -181,10 +181,10 @@ Partial Class FrmReparaciones
         Me.BtnNueva.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnNueva.Image = CType(resources.GetObject("BtnNueva.Image"), System.Drawing.Image)
         Me.BtnNueva.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnNueva.Location = New System.Drawing.Point(1008, 223)
+        Me.BtnNueva.Location = New System.Drawing.Point(1099, 259)
         Me.BtnNueva.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnNueva.Name = "BtnNueva"
-        Me.BtnNueva.Size = New System.Drawing.Size(165, 61)
+        Me.BtnNueva.Size = New System.Drawing.Size(190, 70)
         Me.BtnNueva.TabIndex = 40
         Me.BtnNueva.Tag = ""
         Me.BtnNueva.Text = "  Nueva"
@@ -228,7 +228,6 @@ Partial Class FrmReparaciones
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DgvReparaciones.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.DgvReparaciones.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DgvReparaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgvReparaciones.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.IDCliente, Me.IDTecnico, Me.FechaEntrada, Me.PrecioVenta, Me.Descripcion, Me.Estado})
         Me.DgvReparaciones.Location = New System.Drawing.Point(22, 103)
@@ -236,7 +235,7 @@ Partial Class FrmReparaciones
         Me.DgvReparaciones.Name = "DgvReparaciones"
         Me.DgvReparaciones.ReadOnly = True
         Me.DgvReparaciones.RowHeadersWidth = 62
-        Me.DgvReparaciones.Size = New System.Drawing.Size(964, 431)
+        Me.DgvReparaciones.Size = New System.Drawing.Size(1034, 494)
         Me.DgvReparaciones.TabIndex = 37
         '
         'ID
@@ -346,7 +345,7 @@ Partial Class FrmReparaciones
         Me.BtnNuevo.ForeColor = System.Drawing.Color.White
         Me.BtnNuevo.Location = New System.Drawing.Point(6, 780)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(100, 66)
+        Me.BtnNuevo.Size = New System.Drawing.Size(110, 65)
         Me.BtnNuevo.TabIndex = 42
         Me.BtnNuevo.Text = "Nuevo"
         Me.BtnNuevo.UseVisualStyleBackColor = False
@@ -359,9 +358,9 @@ Partial Class FrmReparaciones
         Me.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGuardar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnGuardar.ForeColor = System.Drawing.Color.White
-        Me.BtnGuardar.Location = New System.Drawing.Point(113, 780)
+        Me.BtnGuardar.Location = New System.Drawing.Point(122, 780)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(100, 66)
+        Me.BtnGuardar.Size = New System.Drawing.Size(110, 65)
         Me.BtnGuardar.TabIndex = 41
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = False
@@ -374,9 +373,9 @@ Partial Class FrmReparaciones
         Me.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnCancelar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCancelar.ForeColor = System.Drawing.Color.White
-        Me.BtnCancelar.Location = New System.Drawing.Point(220, 780)
+        Me.BtnCancelar.Location = New System.Drawing.Point(238, 780)
         Me.BtnCancelar.Name = "BtnCancelar"
-        Me.BtnCancelar.Size = New System.Drawing.Size(100, 66)
+        Me.BtnCancelar.Size = New System.Drawing.Size(110, 65)
         Me.BtnCancelar.TabIndex = 40
         Me.BtnCancelar.Text = "Cancelar"
         Me.BtnCancelar.UseVisualStyleBackColor = False
@@ -580,9 +579,9 @@ Partial Class FrmReparaciones
         Me.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAgregar.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAgregar.ForeColor = System.Drawing.Color.White
-        Me.BtnAgregar.Location = New System.Drawing.Point(1129, 26)
+        Me.BtnAgregar.Location = New System.Drawing.Point(1115, 26)
         Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(93, 66)
+        Me.BtnAgregar.Size = New System.Drawing.Size(110, 65)
         Me.BtnAgregar.TabIndex = 9
         Me.BtnAgregar.Text = "Agregar"
         Me.BtnAgregar.UseVisualStyleBackColor = False
@@ -594,9 +593,9 @@ Partial Class FrmReparaciones
         Me.BtnBuscarReparacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscarReparacion.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBuscarReparacion.ForeColor = System.Drawing.Color.White
-        Me.BtnBuscarReparacion.Location = New System.Drawing.Point(1005, 26)
+        Me.BtnBuscarReparacion.Location = New System.Drawing.Point(991, 26)
         Me.BtnBuscarReparacion.Name = "BtnBuscarReparacion"
-        Me.BtnBuscarReparacion.Size = New System.Drawing.Size(93, 66)
+        Me.BtnBuscarReparacion.Size = New System.Drawing.Size(110, 65)
         Me.BtnBuscarReparacion.TabIndex = 7
         Me.BtnBuscarReparacion.Text = "Buscar"
         Me.BtnBuscarReparacion.UseVisualStyleBackColor = False
@@ -839,9 +838,9 @@ Partial Class FrmReparaciones
         Me.BtnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBuscarCliente.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBuscarCliente.ForeColor = System.Drawing.Color.White
-        Me.BtnBuscarCliente.Location = New System.Drawing.Point(407, 75)
+        Me.BtnBuscarCliente.Location = New System.Drawing.Point(394, 75)
         Me.BtnBuscarCliente.Name = "BtnBuscarCliente"
-        Me.BtnBuscarCliente.Size = New System.Drawing.Size(93, 66)
+        Me.BtnBuscarCliente.Size = New System.Drawing.Size(110, 65)
         Me.BtnBuscarCliente.TabIndex = 6
         Me.BtnBuscarCliente.Text = "Buscar"
         Me.BtnBuscarCliente.UseVisualStyleBackColor = False
