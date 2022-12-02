@@ -238,7 +238,7 @@ CREATE PROC Log_in
 
 AS
 
-SELECT e.nombre,e.id_empleado, c.nombre as cargo FROM Empleados e, Cargos c, Usuarios u 
+SELECT e.nombre,e.apellido,e.id_empleado, c.nombre as cargo FROM Empleados e, Cargos c, Usuarios u 
 WHERE u.id_empleado = e.id_empleado and e.id_cargo = c.id_cargo 
 and u.nombre_usuario = @username and CONVERT(nvarchar(MAX),DECRYPTBYPASSPHRASE('password',u.clave)) = @password
 
@@ -272,6 +272,14 @@ CREATE PROC DeleteUser
 AS
 
 DELETE FROM Usuarios WHERE id_usuario = @id
+
+GO
+
+CREATE PROC GetByIdUser
+@id int
+AS
+
+SELECT * FROM Usuarios WHERE id_usuario = @id
 
 GO
 
@@ -342,6 +350,14 @@ CREATE PROC DeleteCargo
 AS
 
 DELETE FROM Cargos WHERE id_cargo = @id
+
+GO
+
+CREATE PROC GetByIdCargo
+@id int
+AS
+
+SELECT * FROM Cargos WHERE id_cargo = @id
 
 GO
 
@@ -576,6 +592,14 @@ DELETE FROM Marcas WHERE id_marca = @id
 
 GO
 
+CREATE PROC GetByIdMarca
+@id int
+AS
+
+SELECT * FROM Marcas WHERE id_marca = @id
+
+GO
+
 CREATE PROC GetAllMarcas
 
 AS
@@ -608,6 +632,14 @@ CREATE PROC DeleteCategoria
 AS
 
 DELETE FROM Categorias WHERE id_categorias = @id
+
+GO
+
+CREATE PROC GetByIdCategoria
+@id int
+AS
+
+SELECT * FROM Categorias WHERE id_categorias = @id
 
 GO
 
@@ -919,12 +951,12 @@ CREATE PROC AddFacturaReparacion
 @idempleado int,
 @idreparacion int,
 @date datetime,
-@toldiscount numeric(18,2),
 @tolsub numeric(18,2),
+@toldiscount numeric(18,2),
 @toltotal numeric(18,2)
 AS
 
-INSERT INTO Facturas_Reparaciones VALUES (@idcliente,@idempleado,@idreparacion,@date,@toldiscount,@tolsub,@toltotal)
+INSERT INTO Facturas_Reparaciones VALUES (@idcliente,@idempleado,@idreparacion,@date,@tolsub,@toldiscount,@toltotal)
 SELECT SCOPE_IDENTITY()
 
 GO
@@ -1005,10 +1037,20 @@ GO
 CREATE PROC ArtPreferidos
 AS
 
-SELECT TOP 5 c.nombre+' '+c.nombre+' '+a.descripcion AS producto,COUNT(dv.id_articulo) AS cantidadventas from Detalles_Ventas dv
+SELECT TOP 5 a.nombre+' '+c.nombre+' '+a.descripcion AS producto,COUNT(dv.id_articulo) AS cantidadventas from Detalles_Ventas dv
 INNER JOIN Articulos a ON a.id_articulo = dv.id_articulo INNER JOIN Categorias c ON c.id_categorias = a.id_articulo
-INNER JOIN Marcas m ON m.id_marca = a.id_marca GROUP BY dv.id_articulo,c.nombre,m.nombre,a.descripcion 
+INNER JOIN Marcas m ON m.id_marca = a.id_marca GROUP BY dv.id_articulo,a.nombre,a.descripcion,c.nombre,m.nombre 
 ORDER BY COUNT(2) DESC
+
+GO
+
+CREATE PROC Top10Articulos
+AS
+
+SELECT TOP 10 a.nombre,m.nombre AS marca,c.nombre AS categoria,COUNT(dv.id_articulo) AS vendidos, v.fecha FROM Articulos a
+INNER JOIN Marcas m ON a.id_marca = m.id_marca INNER JOIN Categorias C ON a.id_categoria = c.id_categorias
+INNER JOIN Detalles_Ventas dv ON dv.id_articulo = a.id_articulo  INNER JOIN Ventas v ON dv.id_venta = v.id_venta
+GROUP BY v.fecha,dv.id_articulo,a.nombre,m.nombre,c.nombre ORDER BY COUNT(2) DESC
 
 GO
 
